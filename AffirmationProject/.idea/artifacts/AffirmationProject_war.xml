@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="AffirmationProject:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="affirmation-project.war">
+      <element id="artifact" artifact-name="AffirmationProject:war exploded" />
+    </root>
+  </artifact>
+</component>
