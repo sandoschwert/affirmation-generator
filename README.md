@@ -22,8 +22,11 @@ healthy dose of self-confidence and motivation in your life though the screens w
 * Generate a random affirmation (choose naughty or nice!)
 
 ###**Project Plan**
-10/18/16 - Create project repo, create a readme.md, add first entries to journal.md, create class diagram for project, ERD
-10/25/16 - Create basic project structure and configuration in IntelliJ, create REST shell, create db and tables
-11/1/16 - Create DAO's, write corresponding tests, successfully make API request for all end points
-11/8/16 - Documentation, tests and logs.
-11/15/16 - present our project
+
+Deadline | Project Goals
+----- | -----
+10/18/16 | Create project repo, create a readme.md, add first entries to journal.md, create class diagram for project, ERD
+10/25/16 | Create basic project structure and configuration in IntelliJ, create REST shell, create db and tables
+11/1/16 | Create DAO's, write corresponding tests, successfully make API request for all end points
+11/8/16 | Documentation, tests and logs.
+11/15/16 |  present our project
