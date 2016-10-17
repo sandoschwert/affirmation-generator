@@ -8,8 +8,8 @@ This is the team project repository for the Affimation Generator REST service
 
 ###**Problem Statement**
 With an increase of screen time it's harder to get positive affirmations from the 
-people who physically surround you in  life. The positive affirmation generator is a tool to get a 
-healthy dose of self-confidence and motivation in your life though the screens we love in an effort ot create the positive support one needs to succeed in all areas of life. You can do it!
+people who physically surround us in  life. The positive affirmation generator is a tool to get a 
+healthy dose of self-confidence and motivation in your life from those screens we love by making requests to an api for the affirmations you need in an effort ot create the positive support to succeed in all areas of life. You can do it!
 
 ###**Project Objectives**
 *Must Haves*
