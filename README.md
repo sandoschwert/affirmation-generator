@@ -1,10 +1,10 @@
 # affirmation-generator
-![catAff](images/doggoneit.jpg) 
+
+![skullaff](images/skullHappy.jpg)
 
 This is the team project repository for the Affimation Generator REST service
 
 ---
-![skullaff](images/skullHappy.jpg)
 
 ###**Problem Statement**
 With an increase of screen time it's harder to get positive affirmations from the 
@@ -30,3 +30,14 @@ Deadline | Project Goals
 11/1/16 | Create DAO's, write corresponding tests, successfully make API request for all end points
 11/8/16 | Documentation, tests and logs.
 11/15/16 |  present our project
+
+---
+### Project Documents / References
+- [Team Journal](TeamJournal.md )
+- [Slate: Documentation Template System](https://github.com/lord/slate)
+*Slate helps you create beautiful, intelligent, responsive API documentation.*
+
+
+---
+
+![catAff](images/doggoneit.jpg) 
