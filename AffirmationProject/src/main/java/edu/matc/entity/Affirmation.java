@@ -30,9 +30,10 @@ public class Affirmation {
     public Affirmation() {
     }
 
-    public Affirmation(String phrase, int rating) {
+    public Affirmation(String phrase, int rating, int categoryId) {
         this.phrase = phrase;
         this.rating = rating;
+        this.categoryId = categoryId;
     }
 
     public int getAffirmationId() {

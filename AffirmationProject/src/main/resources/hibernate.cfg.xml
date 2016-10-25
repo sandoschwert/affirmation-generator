@@ -10,7 +10,7 @@
 
         <!-- Database connection settings -->
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/stashit</property> <!-- Don't foget to change -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/affirmation_db</property> <!-- Don't foget to change -->
         <property name="connection.username">root</property>
         <property name="connection.password">Yaysql24</property>
 
@@ -21,8 +21,8 @@
         <property name="show_sql">true</property>
 
         <!-- List the annotated entity class/es -->
-        <mapping class="edu.matc.entity.User"/>
-        <mapping class="edu.matc.entity.StorageLocation"/>
+        <mapping class="edu.matc.entity.Category"/>
+        <mapping class="edu.matc.entity.Affirmation"/>
 
     </session-factory>
 
