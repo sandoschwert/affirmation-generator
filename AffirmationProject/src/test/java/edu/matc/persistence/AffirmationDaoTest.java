@@ -19,6 +19,9 @@ public class AffirmationDaoTest {
     Affirmation affirmationUpdate;
     Affirmation affirmationDelete;
 
+//    in the test/resources dir looks to the hibernate file there first
+//    can do it for the lo4j logging files as well
+
     @Before
     public void setup() {
         affirmationDao = new AffirmationDao();
