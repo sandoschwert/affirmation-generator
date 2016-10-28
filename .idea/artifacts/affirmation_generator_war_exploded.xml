@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="affirmation-generator:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/affirmation_generator_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="affirmation-generator" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="affirmation-generator/web/Web2" />
+      <element id="javaee-facet-resources" facet="affirmation-generator/web/Web" />
+    </root>
+  </artifact>
+</component>
