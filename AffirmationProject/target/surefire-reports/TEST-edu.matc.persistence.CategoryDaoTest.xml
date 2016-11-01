@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="edu.matc.persistence.CategoryDaoTest" time="0.062" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="edu.matc.persistence.CategoryDaoTest" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.2.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
