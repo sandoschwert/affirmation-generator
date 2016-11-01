@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - affirmations_ss@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="affirmations_ss">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="AffirmationDB"/>
+    <schema id="3" name="affirmation_db"/>
+    <schema id="4" name="AuthDemo"/>
+    <schema id="5" name="information_schema"/>
+    <schema id="6" name="mysql"/>
+    <schema id="7" name="performance_schema"/>
+    <schema id="8" name="SAMPLE"/>
+    <schema id="9" name="stashit"/>
+    <schema id="10" name="sys"/>
+    <schema id="11" name="testSample"/>
+    <schema id="12" name="testStashit"/>
+    <schema id="13" name="weekFive"/>
+  </database-model>
+</dataSource>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - AffirmationDB@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="AffirmationDB">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="affirmations_ss"/>
+    <schema id="3" name="affirmation_db"/>
+    <schema id="4" name="AuthDemo"/>
+    <schema id="5" name="information_schema"/>
+    <schema id="6" name="mysql"/>
+    <schema id="7" name="performance_schema"/>
+    <schema id="8" name="SAMPLE"/>
+    <schema id="9" name="stashit"/>
+    <schema id="10" name="sys"/>
+    <schema id="11" name="testSample"/>
+    <schema id="12" name="testStashit"/>
+    <schema id="13" name="weekFive"/>
+    <table id="14" parent="1" name="affirmations"/>
+    <table id="15" parent="1" name="categories"/>
+    <column id="16" parent="14" name="affirmationId">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="17" parent="14" name="categoryId">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="18" parent="14" name="phrase">
+      <mandatory>1</mandatory>
+      <data-type>varchar(500)|0</data-type>
+    </column>
+    <column id="19" parent="14" name="rating">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <index id="20" parent="14" name="categoryId">
+      <columns>categoryId</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="21" parent="14" name="id">
+      <columns>affirmationId</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="22" parent="14" name="id">
+      <columns>affirmationId</columns>
+      <underlying-index>id</underlying-index>
+    </key>
+    <foreign-key id="23" parent="14" name="affirmations_ibfk_1">
+      <columns>categoryId</columns>
+      <ref-key>~.categories.PRIMARY</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="24" parent="15" name="categoryId">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="25" parent="15" name="categoryName">
+      <mandatory>1</mandatory>
+      <data-type>varchar(250)|0</data-type>
+    </column>
+    <key id="26" parent="15" name="PRIMARY">
+      <columns>categoryId</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
