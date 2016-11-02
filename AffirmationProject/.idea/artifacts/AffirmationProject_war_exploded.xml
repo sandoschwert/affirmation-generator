@@ -7,6 +7,13 @@
           <element id="module-output" name="AffirmationProject" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.security:oauth1-client:2.24" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-common:2.24" />
+          <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.bundles.repackaged:jersey-guava:2.24" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2:osgi-resource-locator:1.0.1" />
+          <element id="library" level="project" name="Maven: javax.ws.rs:javax.ws.rs-api:2.0.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.security:oauth1-signature:2.24" />
           <element id="library" level="project" name="Maven: javax:javaee-web-api:7.0" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.39" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
@@ -22,11 +29,6 @@
           <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
           <element id="library" level="project" name="Maven: org.jboss:jandex:1.1.0.Final" />
           <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-client:2.23.2" />
-          <element id="library" level="project" name="Maven: javax.ws.rs:javax.ws.rs-api:2.0.1" />
-          <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-common:2.23.2" />
-          <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.2" />
-          <element id="library" level="project" name="Maven: org.glassfish.jersey.bundles.repackaged:jersey-guava:2.23.2" />
-          <element id="library" level="project" name="Maven: org.glassfish.hk2:osgi-resource-locator:1.0.1" />
           <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-api:2.5.0-b05" />
           <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-utils:2.5.0-b05" />
           <element id="library" level="project" name="Maven: org.glassfish.hk2.external:aopalliance-repackaged:2.5.0-b05" />
