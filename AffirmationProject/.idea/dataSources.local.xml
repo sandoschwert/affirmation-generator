@@ -9,7 +9,6 @@
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <introspection-scope>affirmation_db:</introspection-scope>
       <resolve-scope>affirmation_db:</resolve-scope>
     </data-source>
     <data-source name="MySQL - AffirmationDB@localhost" uuid="e67f59ee-cd76-4837-96e9-142d93b832f6">
@@ -20,7 +19,6 @@
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
-      <introspection-scope>AffirmationDB:</introspection-scope>
       <resolve-scope>AffirmationDB:</resolve-scope>
     </data-source>
   </component>
