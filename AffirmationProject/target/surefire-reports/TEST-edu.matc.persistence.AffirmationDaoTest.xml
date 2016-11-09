@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="edu.matc.persistence.AffirmationDaoTest" time="2.561" errors="0" skipped="0">
+<testsuite tests="5" failures="0" name="edu.matc.persistence.AffirmationDaoTest" time="1.48" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,9 +62,9 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="edu.matc.persistence.AffirmationDaoTest" name="getAllAffirmations" time="2.201"/>
-  <testcase classname="edu.matc.persistence.AffirmationDaoTest" name="deleteAffirmation" time="0.135"/>
-  <testcase classname="edu.matc.persistence.AffirmationDaoTest" name="addAffirmation" time="0.009"/>
-  <testcase classname="edu.matc.persistence.AffirmationDaoTest" name="getAffirmationWithId" time="0.015"/>
-  <testcase classname="edu.matc.persistence.AffirmationDaoTest" name="updateAffirmation" time="0.034"/>
+  <testcase classname="edu.matc.persistence.AffirmationDaoTest" name="getAllAffirmations" time="1.311"/>
+  <testcase classname="edu.matc.persistence.AffirmationDaoTest" name="deleteAffirmation" time="0.067"/>
+  <testcase classname="edu.matc.persistence.AffirmationDaoTest" name="addAffirmation" time="0.008"/>
+  <testcase classname="edu.matc.persistence.AffirmationDaoTest" name="getAffirmationWithId" time="0.006"/>
+  <testcase classname="edu.matc.persistence.AffirmationDaoTest" name="updateAffirmation" time="0.018"/>
 </testsuite>
