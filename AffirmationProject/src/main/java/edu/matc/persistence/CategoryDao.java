@@ -89,20 +89,23 @@ public class CategoryDao {
         return id;
     }
 
-    public void deleteCategory(Category category) {
+    public int deleteCategory(Category category) {
 
         Transaction trns = null;
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        int sucInt;
 
         try {
             trns = session.beginTransaction();
             session.delete(category);
             session.getTransaction().commit();
+            sucInt = 1;
 
         } catch (RuntimeException e) {
             if (trns != null) {
                 trns.rollback();
             }
+            sucInt = 0;
             //Todo Take this print out!
             e.printStackTrace();
             log.info("There was a runtime exception to add category loc: " + e);
@@ -111,6 +114,8 @@ public class CategoryDao {
             session.flush();
             session.close();
         }
+
+        return sucInt;
     }
 
 }

@@ -1,7 +1,6 @@
 package edu.matc.service;
 
 import org.glassfish.jersey.internal.util.Base64;
-
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.core.Response;
@@ -27,46 +26,24 @@ public class SecurityFilter implements ContainerRequestFilter {
 
 
         if (requestContext.getUriInfo().getPath().contains(SECURED_URL_PREFIX)) {
+
             List<String> authHeader = requestContext.getHeaders().get(AUTHORIZATION_HEADER_KEY);
 
-
-            System.out.println("THe auth header: " + authHeader);
-
-            if (authHeader.size() > 0 && !authHeader.isEmpty()) {
+            if (authHeader.size() > 0 && !authHeader.isEmpty() &&  authHeader != null) {
 
                 String authToken = authHeader.get(0);
-
-                System.out.println("The auth token: " + authToken);
-
                 authToken = authToken.replaceFirst(AUTHORIZATION_HEADER_PREFIX, "");
-
-                System.out.println("The auth token only: " + authToken);
-
                 String decodedString = Base64.decodeAsString(authToken);
-
-                System.out.println("The auth deocded: " + decodedString);
-
                 StringTokenizer tokenizer = new StringTokenizer(decodedString, ":");
-
-                System.out.println("The auth token tokenizer: " + tokenizer);
 
                 if(tokenizer.countTokens() > 0) {
                     String username = tokenizer.nextToken();
-
-                    System.out.println("The auth username: " + username);
-
                     String password = tokenizer.nextToken();
-                    System.out.println("The auth password: " + password);
-
-
 
                     if ("user".equals(username) && "password".equals(password)) {
-
                         return;
                     }
-
                 }
-
             }
 
                 Response unauthenticatedResponse = Response
@@ -75,8 +52,6 @@ public class SecurityFilter implements ContainerRequestFilter {
                         .build();
 
                 requestContext.abortWith(unauthenticatedResponse);
-
-
         }
     }
 }
