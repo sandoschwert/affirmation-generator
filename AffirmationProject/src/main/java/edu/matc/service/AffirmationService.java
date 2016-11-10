@@ -4,7 +4,9 @@ import edu.matc.entity.Affirmation;
 import edu.matc.persistence.AffirmationDao;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.StringTokenizer;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.*;
@@ -63,6 +65,29 @@ public class AffirmationService  {
         return FAILURE_RESULT;
     }
 
+    @PUT
+    @Path("/affirmations/upvote/{affirmationId}")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    public String upvoteAffirmation(@PathParam("affirmationId") int affirmationId,
+                                    @Context HttpServletResponse servletResponse) throws IOException {
+
+        int totalVotes = affirmationDao.upVoteAffirmation(affirmationId);
+        Affirmation affirmation = affirmationDao.getAffirmationWithId(affirmationId);
+        return "The total votes: " + totalVotes;
+    }
+
+    @PUT
+    @Path("/affirmations/downvote/{affirmationId}")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    public String downvoteAffirmation(@PathParam("affirmationId") int affirmationId) throws IOException {
+
+
+        int totalVotes = affirmationDao.downVoteAffirmation(affirmationId);
+        Affirmation affirmation = affirmationDao.getAffirmationWithId(affirmationId);
+        return "The total votes: " + totalVotes;
+    }
 
     @GET
     @Path("/affirmations/categories/{categoryName}")
@@ -72,7 +97,36 @@ public class AffirmationService  {
         AffirmationDao affirmationDao = new AffirmationDao();
 
         List<Affirmation> affirmationList = affirmationDao.getAllAffirmationsFromCategory(categoryName);
+
         return affirmationList;
+
+    }
+
+    @GET
+    @Path("/affirmations/categories/{categoryName}/{limit}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Affirmation> getAllAffirmationsFromCategory(@PathParam("categoryName") String categoryName, @PathParam("limit") int limit) {
+
+        AffirmationDao affirmationDao = new AffirmationDao();
+
+        List<Affirmation> affirmationList = affirmationDao.getAllAffirmationsFromCategory(categoryName);
+        List<Affirmation> resultLimit = new ArrayList<Affirmation>();
+
+        if (limit > 0) {
+
+            for(int i = 0; i < limit; i++) {
+
+                Affirmation affirmation = new Affirmation();
+                affirmation = affirmationList.get(i);
+                resultLimit.add(affirmation);
+            }
+        } else {
+
+            resultLimit = affirmationList;
+        }
+
+
+        return resultLimit;
 
     }
 

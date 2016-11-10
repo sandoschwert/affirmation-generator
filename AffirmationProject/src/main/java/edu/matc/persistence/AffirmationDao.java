@@ -65,6 +65,75 @@ public class AffirmationDao {
         return id;
     }
 
+    public int downVoteAffirmation(int affirmationId) {
+
+        Affirmation affirmation = getAffirmationWithId(affirmationId);
+        int affdownCount;
+
+
+        Transaction trns = null;
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+
+        try {
+            trns = session.beginTransaction();
+            affdownCount = affirmation.getRating() - 1;
+            affirmation.setRating(affdownCount);
+            session.update(affirmation);
+            session.getTransaction().commit();
+
+        } catch (RuntimeException e) {
+            if (trns != null) {
+                trns.rollback();
+            }
+
+            affdownCount = affirmation.getRating();
+
+            //Todo Take this print out!
+            e.printStackTrace();
+            log.info("There was a runtime exception to update affirmation: " + e);
+
+        } finally {
+            session.flush();
+            session.close();
+        }
+
+        return affdownCount;
+    }
+
+    public int upVoteAffirmation(int affirmationId) {
+
+        int affUpCount;
+        Affirmation affirmation = getAffirmationWithId(affirmationId);
+
+        Transaction trns = null;
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+
+        try {
+            trns = session.beginTransaction();
+            affUpCount = affirmation.getRating() + 1;
+            affirmation.setRating(affUpCount);
+            session.update(affirmation);
+            session.getTransaction().commit();
+
+        } catch (RuntimeException e) {
+            if (trns != null) {
+                trns.rollback();
+            }
+
+            affUpCount = affirmation.getRating();
+
+            //Todo Take this print out!
+            e.printStackTrace();
+            log.info("There was a runtime exception to update affirmation: " + e);
+
+        } finally {
+            session.flush();
+            session.close();
+        }
+
+        return affUpCount;
+    }
+
     public int updateAffirmation(Affirmation affirmation) {
 
         Transaction trns = null;
@@ -155,5 +224,7 @@ public class AffirmationDao {
         return affirmationList;
 
     }
+
+
 
 }
