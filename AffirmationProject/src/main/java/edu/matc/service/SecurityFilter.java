@@ -40,6 +40,7 @@ public class SecurityFilter implements ContainerRequestFilter {
                     String username = tokenizer.nextToken();
                     String password = tokenizer.nextToken();
 
+                    // This sets the user name and password
                     if ("user".equals(username) && "password".equals(password)) {
                         return;
                     }

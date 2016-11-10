@@ -125,9 +125,7 @@ public class AffirmationService  {
             resultLimit = affirmationList;
         }
 
-
         return resultLimit;
-
     }
 
 
