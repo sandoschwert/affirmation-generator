@@ -109,4 +109,15 @@ public class CategoryDaoTest {
         assertEquals("Didn't delete category", 1, delResponse);
     }
 
+    @Test
+    public void getCategoryIdByName() {
+
+        String categoryName = "Success";
+        int categoryId = categoryDao.getCategoryIdOfCategory(categoryName);
+        log.info("The category id for success: " + categoryId);
+        int catInt = categoryDao.getACategoryWithId(categoryId).getCatgoryId();
+
+        assertEquals("Didn't get category ID", categoryId, catInt);
+    }
+
 }

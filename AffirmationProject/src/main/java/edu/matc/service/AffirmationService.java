@@ -64,4 +64,21 @@ public class AffirmationService  {
     }
 
 
+    @GET
+    @Path("/affirmations/categories/{categoryName}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Affirmation> getAllAffirmationsFromCategory(@PathParam("categoryName") String categoryName) {
+
+        AffirmationDao affirmationDao = new AffirmationDao();
+
+        List<Affirmation> affirmationList = affirmationDao.getAllAffirmationsFromCategory(categoryName);
+        return affirmationList;
+
+    }
+
+
+
+
+
+
 }

@@ -3,6 +3,7 @@ package edu.matc.persistence;
 import edu.matc.entity.Affirmation;
 import edu.matc.entity.Category;
 import org.apache.log4j.Logger;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -15,6 +16,7 @@ import java.util.*;
 public class AffirmationDao {
 
     private final Logger log = Logger.getLogger(this.getClass());
+
 
     public List<Affirmation> getAllAffirmations() {
 
@@ -116,6 +118,42 @@ public class AffirmationDao {
         }
 
         return confirm;
+    }
+
+    public List<Affirmation> getAllAffirmationsFromCategory(String categoryName) {
+
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+
+        CategoryDao categoryDao = new CategoryDao();
+
+        List<Affirmation> affirmationList = new ArrayList<Affirmation>();
+        int categoryId = categoryDao.getCategoryIdOfCategory(categoryName);
+
+        Transaction trns = null;
+
+        try {
+
+            trns = session.beginTransaction();
+            String hql = "FROM affirmations af WHERE af.categoryId = :categoryId";
+            Query query = session.createQuery(hql);
+            query.setInteger("categoryId",categoryId);
+            affirmationList = query.list();
+            session.getTransaction().commit();
+
+
+        } catch (RuntimeException e) {
+            if (trns != null) {
+                trns.rollback();
+            }
+            log.info("There was a runtime exception to delete affirmation: " + e);
+
+        } finally {
+            session.flush();
+            session.close();
+        }
+
+        return affirmationList;
+
     }
 
 }

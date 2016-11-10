@@ -1,0 +1,14 @@
+Different Endpoints:
+
+Get All Affirmations Except NSFW
+Get All Aff Includeing NSFW
+
+Get aff by id
+
+Get All Aff with Category X
+Get n number aff with Category X
+
+Get most popular aff of ONE category
+Get most popular aff for allCa
+
+Post up/down vote to one aff

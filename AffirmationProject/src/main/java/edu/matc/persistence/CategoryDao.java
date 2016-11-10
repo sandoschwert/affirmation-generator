@@ -1,7 +1,9 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.Affirmation;
 import edu.matc.entity.Category;
 import org.apache.log4j.Logger;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -116,6 +118,28 @@ public class CategoryDao {
         }
 
         return sucInt;
+    }
+
+    public int getCategoryIdOfCategory(String categoryName) {
+
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+
+        List<Category> categoryList = new ArrayList<Category>();
+        String hql = "FROM categories c WHERE c.categoryName = :categoryName";
+        Query query = session.createQuery(hql);
+
+        Category category = new Category();
+        query.setString("categoryName",categoryName);
+        categoryList = query.list();
+
+        category = categoryList.get(0);
+        log.info("Category from id name success: " + category.getCategoryName() + " List size of cat " + categoryList);
+
+        int catId = category.getCatgoryId();
+
+
+
+        return catId;
     }
 
 }

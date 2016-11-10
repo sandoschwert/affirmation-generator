@@ -40,9 +40,9 @@ public class AffirmationDaoTest {
 
         affirmationDao = new AffirmationDao();
 
-        affirmationAdd = new Affirmation("Meow meow meow meow", 2, 1);
-        affirmationUpdate = new Affirmation("Ruf ruf ruf", 5, 1);
-        affirmationDelete = new Affirmation("Meow Delete Meow", 3, 1);
+        affirmationAdd = new Affirmation("Meow meow meow meow", 2, 17);
+        affirmationUpdate = new Affirmation("Ruf ruf ruf", 5, 17);
+        affirmationDelete = new Affirmation("Meow Delete Meow", 3, 18);
 
         affGetId = affirmationDao.addAffirmation(affirmationAdd);
         affUpdId = affirmationDao.addAffirmation(affirmationUpdate);
@@ -107,6 +107,18 @@ public class AffirmationDaoTest {
         assertEquals("Didn't delete affirmation", 1, delResponse);
 
 
+    }
+
+    @Test
+    public void getAffFromCategoryTest() {
+
+        List<Affirmation> affirmationList = new ArrayList<Affirmation>();
+        String categoryName = "Success";
+        affirmationList = affirmationDao.getAllAffirmationsFromCategory(categoryName);
+
+        log.info("The list of aff by category: " + affirmationList);
+
+        assertEquals("The category name didn't get results", 2, affirmationList.size());
     }
 
 }
