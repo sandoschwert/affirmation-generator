@@ -881,3 +881,820 @@
 2016-11-10 12:42:59,165 7410 [http-nio-8080-exec-3] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Confidence List size of cat [edu.matc.entity.Category@1cdc0528]
 2016-11-10 12:43:05,715 13960 [http-nio-8080-exec-4] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Confidence List size of cat [edu.matc.entity.Category@11b598d7]
 2016-11-10 12:44:16,080 84325 [http-nio-8080-exec-6] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@65f9ff95]
+2016-11-10 16:18:26,834 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 16:18:26,845 11   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 16:18:26,847 13   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 16:18:26,849 15   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 16:18:26,876 42   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 16:18:26,876 42   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 16:18:26,976 142  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 16:18:27,085 251  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 16:18:27,095 261  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 16:18:27,096 262  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 16:18:27,096 262  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 16:18:27,097 263  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 16:18:27,490 656  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 16:18:27,667 833  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 16:18:27,671 837  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 16:18:28,309 1475 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 16:18:28,358 1524 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 16:18:28,372 1538 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 16:18:28,384 1550 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 16:18:28,418 1584 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 16:18:28,430 1596 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 16:18:28,455 1621 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 16:18:28,499 1665 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 16:18:28,510 1676 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 16:18:28,511 1677 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 16:18:28,553 1719 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 16:18:28,562 1728 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 16:18:28,578 1744 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 16:18:28,607 1773 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 16:18:50,324 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 16:18:50,330 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 16:18:50,331 7    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 16:18:50,334 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 16:18:50,351 27   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 16:18:50,351 27   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 16:18:50,424 100  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 16:18:50,499 175  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 16:18:50,504 180  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 16:18:50,505 181  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 16:18:50,505 181  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 16:18:50,506 182  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 16:18:50,870 546  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 16:18:51,000 676  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 16:18:51,004 680  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 16:18:51,491 1167 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 16:18:51,530 1206 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 16:18:51,541 1217 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 16:18:51,553 1229 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 16:18:51,586 1262 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 16:18:51,595 1271 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 16:18:51,615 1291 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 16:18:51,654 1330 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 16:18:51,668 1344 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 16:18:51,668 1344 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 16:18:51,688 1364 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 16:18:51,700 1376 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 16:18:51,714 1390 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 16:18:51,744 1420 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 16:20:16,927 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 16:20:16,935 8    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 16:20:16,937 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 16:20:16,939 12   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 16:20:16,967 40   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 16:20:16,967 40   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 16:20:17,055 128  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 16:20:17,154 227  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 16:20:17,161 234  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 16:20:17,161 234  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 16:20:17,162 235  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 16:20:17,163 236  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 16:20:17,586 659  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 16:20:17,731 804  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 16:20:17,737 810  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 16:20:18,388 1461 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 16:20:18,436 1509 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 16:20:18,450 1523 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 16:20:18,469 1542 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 16:20:18,527 1600 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 16:20:18,541 1614 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 16:20:18,571 1644 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 16:20:18,605 1678 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 16:20:18,617 1690 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 16:20:18,617 1690 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 16:20:18,640 1713 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 16:20:18,649 1722 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 16:20:18,665 1738 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 16:20:18,693 1766 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 16:22:08,002 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 16:22:08,010 8    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 16:22:08,012 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 16:22:08,015 13   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 16:22:08,041 39   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 16:22:08,042 40   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 16:22:08,131 129  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 16:22:08,237 235  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 16:22:08,245 243  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 16:22:08,246 244  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 16:22:08,246 244  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 16:22:08,248 246  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 16:22:08,643 641  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 16:22:08,820 818  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 16:22:08,827 825  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 16:22:09,400 1398 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 16:22:09,431 1429 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 16:22:09,441 1439 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 16:22:09,454 1452 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 16:22:09,483 1481 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 16:22:09,491 1489 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 16:22:09,507 1505 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 16:22:09,541 1539 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 16:22:09,552 1550 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 16:22:09,552 1550 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 16:22:09,573 1571 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 16:22:09,580 1578 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 16:22:09,593 1591 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 16:22:09,613 1611 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 16:22:40,293 0    [http-nio-8080-exec-2] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 16:22:40,304 11   [http-nio-8080-exec-2] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 16:22:40,308 15   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 16:22:40,310 17   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 16:22:40,345 52   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 16:22:40,345 52   [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 16:22:40,405 112  [http-nio-8080-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 16:22:40,545 252  [http-nio-8080-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 16:22:40,551 258  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/AffirmationDB]
+2016-11-10 16:22:40,551 258  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 16:22:40,551 258  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 16:22:40,553 260  [http-nio-8080-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 16:22:40,871 578  [http-nio-8080-exec-2] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 16:22:41,056 763  [http-nio-8080-exec-2] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 16:22:41,063 770  [http-nio-8080-exec-2] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 16:22:41,759 1466 [http-nio-8080-exec-2] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@19c60bea]
+2016-11-10 16:25:06,552 146259 [http-nio-8080-exec-6] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@2db3237]
+2016-11-10 16:27:22,481 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 16:27:22,491 10   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 16:27:22,494 13   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 16:27:22,497 16   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 16:27:22,527 46   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 16:27:22,527 46   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 16:27:22,616 135  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 16:27:22,728 247  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 16:27:22,737 256  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 16:27:22,738 257  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 16:27:22,738 257  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 16:27:22,739 258  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 16:27:23,112 631  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 16:27:23,261 780  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 16:27:23,267 786  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 16:27:23,867 1386 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 16:27:23,906 1425 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 16:27:23,918 1437 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 16:27:23,930 1449 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 16:27:23,964 1483 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 16:27:23,975 1494 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 16:27:24,001 1520 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 16:27:24,032 1551 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 16:27:24,045 1564 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 16:27:24,045 1564 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 16:27:24,077 1596 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 16:27:24,093 1612 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 16:27:24,117 1636 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 16:27:24,147 1666 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 16:29:06,193 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 16:29:06,201 8    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 16:29:06,203 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 16:29:06,207 14   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 16:29:06,235 42   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 16:29:06,236 43   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 16:29:06,316 123  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 16:29:06,428 235  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 16:29:06,438 245  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 16:29:06,439 246  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 16:29:06,439 246  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 16:29:06,440 247  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 16:29:06,823 630  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 16:29:06,979 786  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 16:29:06,985 792  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 16:29:07,571 1378 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 16:29:07,606 1413 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 16:29:07,620 1427 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 16:29:07,631 1438 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 16:29:07,668 1475 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 16:29:07,678 1485 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 16:29:07,700 1507 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 16:29:07,730 1537 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 16:29:07,742 1549 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 16:29:07,742 1549 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 16:29:07,771 1578 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 16:29:07,783 1590 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 16:29:07,801 1608 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 16:29:07,829 1636 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 16:29:27,213 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 16:29:27,221 8    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 16:29:27,224 11   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 16:29:27,226 13   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 16:29:27,251 38   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 16:29:27,251 38   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 16:29:27,333 120  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 16:29:27,514 301  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 16:29:27,520 307  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 16:29:27,521 308  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 16:29:27,521 308  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 16:29:27,524 311  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 16:29:27,871 658  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 16:29:28,016 803  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 16:29:28,021 808  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 16:29:28,584 1371 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 16:29:28,625 1412 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 16:29:28,634 1421 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 16:29:28,643 1430 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 16:29:28,672 1459 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 16:29:28,679 1466 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 16:29:28,697 1484 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 16:29:28,719 1506 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 16:29:28,728 1515 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 16:29:28,728 1515 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 16:29:28,745 1532 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 16:29:28,752 1539 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 16:29:28,763 1550 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 16:29:28,783 1570 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 16:29:50,440 0    [http-nio-8080-exec-9] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 16:29:50,452 12   [http-nio-8080-exec-9] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 16:29:50,455 15   [http-nio-8080-exec-9] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 16:29:50,458 18   [http-nio-8080-exec-9] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 16:29:50,493 53   [http-nio-8080-exec-9] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 16:29:50,493 53   [http-nio-8080-exec-9] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 16:29:50,556 116  [http-nio-8080-exec-9] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 16:29:50,696 256  [http-nio-8080-exec-9] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 16:29:50,702 262  [http-nio-8080-exec-9] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/AffirmationDB]
+2016-11-10 16:29:50,703 263  [http-nio-8080-exec-9] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 16:29:50,703 263  [http-nio-8080-exec-9] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 16:29:50,705 265  [http-nio-8080-exec-9] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 16:29:51,035 595  [http-nio-8080-exec-9] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 16:29:51,219 779  [http-nio-8080-exec-9] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 16:29:51,226 786  [http-nio-8080-exec-9] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 16:29:51,911 1471 [http-nio-8080-exec-9] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@3655229]
+2016-11-10 16:29:56,838 6398 [http-nio-8080-exec-10] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@453505be]
+2016-11-10 16:46:04,656 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 16:46:04,663 7    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 16:46:04,666 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 16:46:04,667 11   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 16:46:04,694 38   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 16:46:04,694 38   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 16:46:04,771 115  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 16:46:04,862 206  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 16:46:04,870 214  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 16:46:04,870 214  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 16:46:04,870 214  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 16:46:04,872 216  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 16:46:05,234 578  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 16:46:05,369 713  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 16:46:05,374 718  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 16:46:05,891 1235 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 16:46:05,921 1265 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 16:46:05,931 1275 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 16:46:05,941 1285 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 16:46:05,970 1314 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 16:46:05,978 1322 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 16:46:05,995 1339 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 16:46:06,019 1363 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 16:46:06,029 1373 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 16:46:06,030 1374 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 16:46:06,048 1392 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 16:46:06,056 1400 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 16:46:06,068 1412 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 16:46:06,088 1432 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 16:47:59,858 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 16:47:59,868 10   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 16:47:59,870 12   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 16:47:59,872 14   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 16:47:59,900 42   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 16:47:59,900 42   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 16:47:59,996 138  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 16:48:00,112 254  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 16:48:00,120 262  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 16:48:00,121 263  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 16:48:00,121 263  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 16:48:00,123 265  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 16:48:00,551 693  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 16:48:00,725 867  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 16:48:00,731 873  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 16:48:01,359 1501 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 16:48:01,393 1535 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 16:48:01,402 1544 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 16:48:01,413 1555 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 16:48:01,441 1583 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 16:48:01,449 1591 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 16:48:01,466 1608 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 16:48:01,490 1632 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 16:48:01,497 1639 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 16:48:01,497 1639 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 16:48:01,513 1655 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 16:48:01,521 1663 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 16:48:01,534 1676 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 16:48:01,555 1697 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 21:43:58,164 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 21:43:58,172 8    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 21:43:58,174 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 21:43:58,176 12   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 21:43:58,200 36   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 21:43:58,200 36   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 21:43:58,281 117  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 21:43:58,369 205  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 21:43:58,376 212  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 21:43:58,376 212  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 21:43:58,377 213  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 21:43:58,378 214  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 21:43:58,753 589  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 21:43:58,891 727  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 21:43:58,895 731  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 21:43:59,429 1265 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 21:43:59,465 1301 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 21:43:59,474 1310 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 21:43:59,484 1320 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 21:43:59,514 1350 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 21:43:59,522 1358 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 21:43:59,538 1374 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 21:43:59,561 1397 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 21:43:59,570 1406 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 21:43:59,570 1406 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 21:43:59,590 1426 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 21:43:59,601 1437 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 21:43:59,618 1454 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 21:43:59,644 1480 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 22:07:34,548 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 22:07:34,557 9    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 22:07:34,560 12   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 22:07:34,562 14   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 22:07:34,588 40   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 22:07:34,588 40   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 22:07:34,681 133  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 22:07:34,792 244  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 22:07:34,802 254  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 22:07:34,803 255  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 22:07:34,804 256  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 22:07:34,805 257  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 22:07:35,203 655  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 22:07:35,356 808  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 22:07:35,361 813  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 22:07:35,942 1394 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 22:07:35,982 1434 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 22:07:35,993 1445 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 22:07:36,005 1457 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 22:07:36,047 1499 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 22:07:36,058 1510 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 22:07:36,082 1534 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 22:07:36,117 1569 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 22:07:36,128 1580 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 22:07:36,128 1580 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 22:07:36,155 1607 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 22:07:36,165 1617 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 22:07:36,181 1633 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 22:07:36,209 1661 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 22:07:52,633 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 22:07:52,639 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 22:07:52,641 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 22:07:52,642 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 22:07:52,657 24   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 22:07:52,657 24   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 22:07:52,731 98   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 22:07:52,805 172  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 22:07:52,811 178  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 22:07:52,812 179  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 22:07:52,812 179  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 22:07:52,813 180  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 22:07:53,159 526  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 22:07:53,295 662  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 22:07:53,298 665  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 22:07:53,785 1152 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 22:07:53,821 1188 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 22:07:53,833 1200 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 22:07:53,848 1215 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 22:07:53,880 1247 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 22:07:53,891 1258 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 22:07:53,914 1281 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 22:07:53,945 1312 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 22:07:53,954 1321 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 22:07:53,955 1322 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 22:07:53,977 1344 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 22:07:53,988 1355 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 22:07:54,005 1372 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 22:07:54,031 1398 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 22:21:33,715 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 22:21:33,724 9    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 22:21:33,726 11   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 22:21:33,729 14   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 22:21:33,756 41   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 22:21:33,757 42   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 22:21:33,846 131  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 22:21:33,956 241  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 22:21:33,964 249  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 22:21:33,964 249  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 22:21:33,964 249  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 22:21:33,966 251  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 22:21:34,357 642  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 22:21:34,513 798  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 22:21:34,518 803  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 22:21:35,116 1401 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 22:21:35,155 1440 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 22:21:35,167 1452 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 22:21:35,182 1467 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 22:21:35,215 1500 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 22:21:35,226 1511 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 22:21:35,246 1531 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 22:21:35,276 1561 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 22:21:35,287 1572 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 22:21:35,287 1572 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 22:21:35,310 1595 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 22:21:35,322 1607 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 22:21:35,338 1623 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 22:21:35,366 1651 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 22:30:23,151 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 22:30:23,159 8    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 22:30:23,162 11   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 22:30:23,164 13   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 22:30:23,189 38   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 22:30:23,190 39   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 22:30:23,278 127  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 22:30:23,379 228  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 22:30:23,389 238  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 22:30:23,389 238  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 22:30:23,389 238  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 22:30:23,391 240  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 22:30:23,766 615  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 22:30:23,918 767  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 22:30:23,922 771  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 22:30:24,506 1355 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 22:30:24,545 1394 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 22:30:24,558 1407 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 22:30:24,569 1418 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 22:30:24,603 1452 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 22:30:24,612 1461 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 22:30:24,630 1479 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 22:30:24,678 1527 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 22:30:24,688 1537 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 22:30:24,688 1537 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 22:30:24,714 1563 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 22:30:24,725 1574 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 22:30:24,744 1593 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 22:30:24,773 1622 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 22:31:51,713 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 22:31:51,723 10   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 22:31:51,725 12   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 22:31:51,727 14   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 22:31:51,755 42   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 22:31:51,755 42   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 22:31:51,840 127  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 22:31:51,951 238  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 22:31:51,959 246  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 22:31:51,960 247  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 22:31:51,960 247  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 22:31:51,962 249  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 22:31:52,336 623  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 22:31:52,489 776  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 22:31:52,495 782  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 22:31:53,090 1377 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 22:31:53,125 1412 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 22:31:53,140 1427 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 22:31:53,155 1442 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 22:31:53,186 1473 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 22:31:53,197 1484 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 22:31:53,216 1503 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 22:31:53,253 1540 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 22:31:53,261 1548 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 22:31:53,261 1548 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 22:31:53,286 1573 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 22:31:53,295 1582 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 22:31:53,309 1596 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 22:31:53,340 1627 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 22:35:03,318 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 22:35:03,330 12   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 22:35:03,333 15   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 22:35:03,335 17   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 22:35:03,362 44   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 22:35:03,363 45   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 22:35:03,461 143  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 22:35:03,615 297  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 22:35:03,626 308  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 22:35:03,627 309  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 22:35:03,627 309  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 22:35:03,629 311  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 22:35:04,035 717  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 22:35:04,216 898  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 22:35:04,222 904  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 22:35:04,884 1566 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 22:35:04,920 1602 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 22:35:04,933 1615 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 22:35:04,950 1632 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 22:35:04,989 1671 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 22:35:04,999 1681 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 22:35:05,021 1703 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 22:35:05,051 1733 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 22:35:05,063 1745 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 22:35:05,063 1745 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 22:35:05,083 1765 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 22:35:05,095 1777 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 22:35:05,112 1794 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 22:35:05,146 1828 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 22:35:23,608 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 22:35:23,616 8    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 22:35:23,618 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 22:35:23,620 12   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 22:35:23,637 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 22:35:23,637 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 22:35:23,716 108  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 22:35:23,805 197  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 22:35:23,816 208  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 22:35:23,817 209  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 22:35:23,818 210  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 22:35:23,820 212  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 22:35:24,199 591  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 22:35:24,324 716  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 22:35:24,328 720  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 22:35:24,826 1218 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 22:35:24,866 1258 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 22:35:24,879 1271 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 22:35:24,888 1280 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 22:35:24,925 1317 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 22:35:24,936 1328 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 22:35:24,960 1352 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 22:35:24,993 1385 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 22:35:25,001 1393 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 22:35:25,002 1394 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 22:35:25,027 1419 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 22:35:25,038 1430 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 22:35:25,053 1445 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 22:35:25,083 1475 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 22:40:01,501 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 22:40:01,511 10   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 22:40:01,514 13   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 22:40:01,517 16   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 22:40:01,544 43   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 22:40:01,545 44   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 22:40:01,635 134  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 22:40:01,752 251  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 22:40:01,759 258  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 22:40:01,759 258  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 22:40:01,760 259  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 22:40:01,761 260  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 22:40:02,115 614  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 22:40:02,260 759  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 22:40:02,267 766  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 22:40:02,852 1351 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 22:40:02,884 1383 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 22:40:02,892 1391 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 22:40:02,903 1402 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 22:40:02,932 1431 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 22:40:02,939 1438 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 22:40:02,955 1454 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 22:40:02,981 1480 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 22:40:02,990 1489 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 22:40:02,990 1489 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 22:40:03,008 1507 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 22:40:03,017 1516 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 22:40:03,029 1528 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 22:40:03,053 1552 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-10 22:44:08,249 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-10 22:44:08,256 7    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-10 22:44:08,258 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-10 22:44:08,260 11   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-10 22:44:08,285 36   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-10 22:44:08,285 36   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-10 22:44:08,364 115  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-10 22:44:08,454 205  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-10 22:44:08,461 212  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-10 22:44:08,461 212  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-10 22:44:08,461 212  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-10 22:44:08,462 213  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-10 22:44:08,803 554  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-10 22:44:08,938 689  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-10 22:44:08,944 695  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-10 22:44:09,511 1262 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-10 22:44:09,542 1293 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-10 22:44:09,550 1301 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-10 22:44:09,559 1310 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-10 22:44:09,587 1338 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-10 22:44:09,595 1346 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-10 22:44:09,610 1361 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-10 22:44:09,634 1385 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-10 22:44:09,642 1393 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-10 22:44:09,642 1393 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-10 22:44:09,659 1410 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-10 22:44:09,666 1417 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-10 22:44:09,678 1429 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-10 22:44:09,697 1448 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-11 09:07:44,812 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 09:07:44,820 8    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-11 09:07:44,822 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-11 09:07:44,824 12   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-11 09:07:44,849 37   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-11 09:07:44,849 37   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-11 09:07:44,932 120  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-11 09:07:45,053 241  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 09:07:45,064 252  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-11 09:07:45,065 253  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 09:07:45,065 253  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-11 09:07:45,066 254  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 09:07:45,455 643  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-11 09:07:45,628 816  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 09:07:45,633 821  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 09:07:46,168 1356 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-11 09:07:46,205 1393 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-11 09:07:46,213 1401 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-11 09:07:46,222 1410 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-11 09:07:46,250 1438 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-11 09:07:46,258 1446 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-11 09:07:46,274 1462 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-11 09:07:46,299 1487 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-11 09:07:46,307 1495 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-11 09:07:46,307 1495 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-11 09:07:46,324 1512 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-11 09:07:46,331 1519 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-11 09:07:46,344 1532 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-11 09:07:46,364 1552 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-11 09:21:52,106 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 09:21:52,113 7    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-11 09:21:52,115 9    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-11 09:21:52,117 11   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-11 09:21:52,142 36   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-11 09:21:52,142 36   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-11 09:21:52,218 112  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-11 09:21:52,307 201  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 09:21:52,313 207  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-11 09:21:52,314 208  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 09:21:52,314 208  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-11 09:21:52,315 209  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 09:21:52,660 554  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-11 09:21:52,799 693  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 09:21:52,805 699  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 09:21:53,354 1248 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-11 09:21:53,384 1278 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-11 09:21:53,393 1287 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-11 09:21:53,403 1297 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-11 09:21:53,432 1326 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-11 09:21:53,439 1333 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-11 09:21:53,454 1348 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-11 09:21:53,475 1369 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-11 09:21:53,482 1376 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-11 09:21:53,482 1376 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-11 09:21:53,500 1394 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-11 09:21:53,507 1401 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-11 09:21:53,518 1412 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-11 09:21:53,538 1432 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-11 09:24:01,351 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 09:24:01,363 12   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-11 09:24:01,366 15   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-11 09:24:01,368 17   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-11 09:24:01,398 47   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-11 09:24:01,398 47   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-11 09:24:01,483 132  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-11 09:24:01,590 239  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 09:24:01,600 249  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-11 09:24:01,601 250  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 09:24:01,601 250  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-11 09:24:01,602 251  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 09:24:01,978 627  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-11 09:24:02,126 775  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 09:24:02,133 782  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 09:24:02,722 1371 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-11 09:24:02,762 1411 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-11 09:24:02,775 1424 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-11 09:24:02,786 1435 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-11 09:24:02,819 1468 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-11 09:24:02,828 1477 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-11 09:24:02,848 1497 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-11 09:24:02,880 1529 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-11 09:24:02,893 1542 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-11 09:24:02,893 1542 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-11 09:24:02,920 1569 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-11 09:24:02,934 1583 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-11 09:24:02,952 1601 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-11 09:24:02,982 1631 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-11 09:28:15,383 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 09:28:15,392 9    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-11 09:28:15,394 11   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-11 09:28:15,396 13   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-11 09:28:15,423 40   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-11 09:28:15,423 40   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-11 09:28:15,509 126  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-11 09:28:15,613 230  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 09:28:15,622 239  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-11 09:28:15,623 240  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 09:28:15,623 240  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-11 09:28:15,625 242  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 09:28:16,002 619  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-11 09:28:16,149 766  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 09:28:16,155 772  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 09:28:16,743 1360 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-11 09:28:16,791 1408 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-11 09:28:16,804 1421 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-11 09:28:16,820 1437 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-11 09:28:16,859 1476 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-11 09:28:16,871 1488 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-11 09:28:16,895 1512 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-11 09:28:16,928 1545 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-11 09:28:16,937 1554 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-11 09:28:16,937 1554 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-11 09:28:16,956 1573 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-11 09:28:16,966 1583 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-11 09:28:16,981 1598 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-11 09:28:17,010 1627 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-11 09:28:33,180 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 09:28:33,185 5    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-11 09:28:33,186 6    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-11 09:28:33,188 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-11 09:28:33,205 25   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-11 09:28:33,205 25   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-11 09:28:33,267 87   [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-11 09:28:33,331 151  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 09:28:33,336 156  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-11 09:28:33,337 157  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 09:28:33,337 157  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-11 09:28:33,338 158  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 09:28:33,680 500  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-11 09:28:33,807 627  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 09:28:33,811 631  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 09:28:34,283 1103 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-11 09:28:34,317 1137 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-11 09:28:34,325 1145 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-11 09:28:34,334 1154 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-11 09:28:34,360 1180 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-11 09:28:34,368 1188 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-11 09:28:34,384 1204 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-11 09:28:34,409 1229 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-11 09:28:34,418 1238 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-11 09:28:34,418 1238 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-11 09:28:34,437 1257 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-11 09:28:34,443 1263 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-11 09:28:34,455 1275 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-11 09:28:34,476 1296 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-11 09:30:23,587 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 09:30:23,595 8    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-11 09:30:23,597 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-11 09:30:23,599 12   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-11 09:30:23,624 37   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-11 09:30:23,625 38   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-11 09:30:23,721 134  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-11 09:30:23,829 242  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 09:30:23,837 250  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-11 09:30:23,838 251  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 09:30:23,838 251  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-11 09:30:23,839 252  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 09:30:24,184 597  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-11 09:30:24,315 728  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 09:30:24,320 733  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 09:30:24,880 1293 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-11 09:30:24,915 1328 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-11 09:30:24,927 1340 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-11 09:30:24,940 1353 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-11 09:30:24,970 1383 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-11 09:30:24,978 1391 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-11 09:30:24,994 1407 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-11 09:30:25,019 1432 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-11 09:30:25,027 1440 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-11 09:30:25,027 1440 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-11 09:30:25,044 1457 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-11 09:30:25,051 1464 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-11 09:30:25,062 1475 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-11 09:30:25,083 1496 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-11 10:06:47,965 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 10:06:47,974 9    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-11 10:06:47,977 12   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-11 10:06:47,979 14   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-11 10:06:48,005 40   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-11 10:06:48,006 41   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-11 10:06:48,099 134  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-11 10:06:48,212 247  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 10:06:48,224 259  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-11 10:06:48,224 259  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 10:06:48,225 260  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-11 10:06:48,226 261  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 10:06:48,616 651  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-11 10:06:48,762 797  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 10:06:48,766 801  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 10:06:49,339 1374 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-11 10:06:49,370 1405 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-11 10:06:49,379 1414 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-11 10:06:49,390 1425 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-11 10:06:49,418 1453 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-11 10:06:49,428 1463 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-11 10:06:49,452 1487 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-11 10:06:49,477 1512 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-11 10:06:49,489 1524 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-11 10:06:49,489 1524 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-11 10:06:49,507 1542 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-11 10:06:49,520 1555 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-11 10:06:49,535 1570 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-11 10:06:49,563 1598 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72
+2016-11-11 10:09:20,538 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-11 10:09:20,545 7    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-11 10:09:20,546 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-11 10:09:20,548 10   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-11 10:09:20,563 25   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-11 10:09:20,563 25   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-11 10:09:20,642 104  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-11 10:09:20,707 169  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-11 10:09:20,714 176  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-11 10:09:20,715 177  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-11 10:09:20,715 177  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-11 10:09:20,716 178  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-11 10:09:21,060 522  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-11 10:09:21,173 635  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-11 10:09:21,176 638  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-11 10:09:21,614 1076 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@70a36a66, edu.matc.entity.Affirmation@d3957fe, edu.matc.entity.Affirmation@6622fc65]
+2016-11-11 10:09:21,650 1112 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 6
+2016-11-11 10:09:21,666 1128 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 10
+2016-11-11 10:09:21,683 1145 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@710b18a6
+2016-11-11 10:09:21,722 1184 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@5b529706]
+2016-11-11 10:09:21,732 1194 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@54d18072, edu.matc.entity.Affirmation@1506f20f]
+2016-11-11 10:09:21,753 1215 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@b7838a9
+2016-11-11 10:09:21,782 1244 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-11 10:09:21,791 1253 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@312ab28e]
+2016-11-11 10:09:21,792 1254 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-11 10:09:21,811 1273 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-11 10:09:21,820 1282 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@18025ced, edu.matc.entity.Category@13cf7d52, edu.matc.entity.Category@3a3e4aff]
+2016-11-11 10:09:21,831 1293 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@6035b93b
+2016-11-11 10:09:21,852 1314 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@1cbf6e72

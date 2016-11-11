@@ -29,7 +29,7 @@ public class SecurityFilter implements ContainerRequestFilter {
 
             List<String> authHeader = requestContext.getHeaders().get(AUTHORIZATION_HEADER_KEY);
 
-            if (authHeader.size() > 0 && !authHeader.isEmpty() &&  authHeader != null) {
+            if (authHeader != null && authHeader.size() > 0 && !authHeader.isEmpty()) {
 
                 String authToken = authHeader.get(0);
                 authToken = authToken.replaceFirst(AUTHORIZATION_HEADER_PREFIX, "");

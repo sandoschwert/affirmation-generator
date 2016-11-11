@@ -69,24 +69,24 @@ public class AffirmationService  {
     @Path("/affirmations/upvote/{affirmationId}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    public String upvoteAffirmation(@PathParam("affirmationId") int affirmationId,
+    public Response upvoteAffirmation(@PathParam("affirmationId") int affirmationId,
                                     @Context HttpServletResponse servletResponse) throws IOException {
 
         int totalVotes = affirmationDao.upVoteAffirmation(affirmationId);
         Affirmation affirmation = affirmationDao.getAffirmationWithId(affirmationId);
-        return "The total votes: " + totalVotes;
+        return Response.status(200).entity(affirmation).build();
     }
 
     @PUT
     @Path("/affirmations/downvote/{affirmationId}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
-    public String downvoteAffirmation(@PathParam("affirmationId") int affirmationId) throws IOException {
-
+    public Response downvoteAffirmation(@PathParam("affirmationId") int affirmationId) throws IOException {
 
         int totalVotes = affirmationDao.downVoteAffirmation(affirmationId);
         Affirmation affirmation = affirmationDao.getAffirmationWithId(affirmationId);
-        return "The total votes: " + totalVotes;
+        return Response.status(200).entity(affirmation).build();
+
     }
 
     @GET
