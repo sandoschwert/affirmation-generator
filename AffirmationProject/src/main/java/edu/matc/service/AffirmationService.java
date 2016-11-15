@@ -26,7 +26,10 @@ public class AffirmationService  {
     private static final String SUCCESS_RESULT="<result>success</result>";
     private static final String FAILURE_RESULT="<result>failure</result>";
 
-
+    /**
+     *
+     * @return
+     */
     @GET
     @Path("/affirmations")
     @Produces(MediaType.APPLICATION_JSON)
@@ -36,8 +39,29 @@ public class AffirmationService  {
         return affirmationList;
     }
 
+    /**
+     *
+     * @return
+     */
     @GET
-    @Path("/affirmations/{affirmationId}")
+    @Path("/affirmations/limit/{limit}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Affirmation> getAffirmationsWithLimit(@PathParam("limit") int limit) {
+
+        List<Affirmation> affirmationList = affirmationDao.getAllAffirmations();
+
+        List<Affirmation> resultLimit = getLimitedList(affirmationList, limit);
+
+        return resultLimit;
+
+    }
+
+    /**
+     *
+     * @return
+     */
+    @GET
+        @Path("/affirmations/{affirmationId}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getOneAffirmation(@PathParam("affirmationId") int affirmationId) {
 
@@ -46,7 +70,10 @@ public class AffirmationService  {
     }
 
 
-
+    /**
+     *
+     * @return
+     */
     @POST
     @Path("/affirmations")
     @Produces(MediaType.APPLICATION_JSON)
@@ -65,6 +92,10 @@ public class AffirmationService  {
         return FAILURE_RESULT;
     }
 
+    /**
+     *
+     * @return
+     */
     @PUT
     @Path("/affirmations/upvote/{affirmationId}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -77,6 +108,10 @@ public class AffirmationService  {
         return Response.status(200).entity(affirmation).build();
     }
 
+    /**
+     *
+     * @return
+     */
     @PUT
     @Path("/affirmations/downvote/{affirmationId}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -89,6 +124,10 @@ public class AffirmationService  {
 
     }
 
+    /**
+     *
+     * @return
+     */
     @GET
     @Path("/affirmations/categories/{categoryName}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -102,6 +141,10 @@ public class AffirmationService  {
 
     }
 
+    /**
+     *
+     * @return
+     */
     @GET
     @Path("/affirmations/categories/{categoryName}/{limit}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -111,25 +154,30 @@ public class AffirmationService  {
 
         List<Affirmation> affirmationList = affirmationDao.getAllAffirmationsFromCategory(categoryName);
         List<Affirmation> resultLimit = new ArrayList<Affirmation>();
+        return getLimitedList(affirmationList, limit);
+    }
+
+
+    public List<Affirmation> getLimitedList(List<Affirmation> affirmations, int limit) {
+
+        List<Affirmation> resultLimit = new ArrayList<Affirmation>();
 
         if (limit > 0) {
 
             for(int i = 0; i < limit; i++) {
 
                 Affirmation affirmation = new Affirmation();
-                affirmation = affirmationList.get(i);
+                affirmation = affirmations.get(i);
                 resultLimit.add(affirmation);
             }
         } else {
 
-            resultLimit = affirmationList;
+            resultLimit = affirmations;
         }
 
         return resultLimit;
+
     }
-
-
-
 
 
 
