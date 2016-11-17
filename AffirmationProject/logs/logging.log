@@ -2625,3 +2625,147 @@
 2016-11-16 18:06:24,763 1421 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@44828f6b, edu.matc.entity.Category@2dbe250d, edu.matc.entity.Category@553f1d75]
 2016-11-16 18:06:24,770 1428 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@275fe372
 2016-11-16 18:06:24,778 1436 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@3f446bef
+2016-11-17 11:30:14,802 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-17 11:30:14,810 8    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-17 11:30:14,813 11   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-17 11:30:14,817 15   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-17 11:30:14,858 56   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-17 11:30:14,858 56   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-17 11:30:14,963 161  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-17 11:30:15,072 270  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-17 11:30:15,083 281  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-17 11:30:15,084 282  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-17 11:30:15,084 282  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-17 11:30:15,085 283  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-17 11:30:15,638 836  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-17 11:30:15,836 1034 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-17 11:30:15,842 1040 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-17 11:30:16,603 1801 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@3a6f2de3, edu.matc.entity.Affirmation@4b2a01d4, edu.matc.entity.Affirmation@8692d67, edu.matc.entity.Affirmation@78f5c518, edu.matc.entity.Affirmation@2f48b3d2, edu.matc.entity.Affirmation@34f7234e, edu.matc.entity.Affirmation@753432a2]
+2016-11-17 11:30:16,603 1801 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - Afflist size: 7
+2016-11-17 11:30:16,641 1839 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 10
+2016-11-17 11:30:16,669 1867 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - Popular affirmation rating8
+2016-11-17 11:30:16,689 1887 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 29
+2016-11-17 11:30:16,711 1909 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@7ce97ee5
+2016-11-17 11:30:16,744 1942 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@40f70521, edu.matc.entity.Affirmation@774698ab, edu.matc.entity.Affirmation@55342f40, edu.matc.entity.Affirmation@a4ca3f6, edu.matc.entity.Affirmation@72ea6193, edu.matc.entity.Affirmation@31aa3ca5]
+2016-11-17 11:30:16,744 1942 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - Afflist size good: 6
+2016-11-17 11:30:16,771 1969 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@3e10dc6]
+2016-11-17 11:30:16,776 1974 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@1021f6c9, edu.matc.entity.Affirmation@7516e4e5]
+2016-11-17 11:30:16,796 1994 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@4c398c80]
+2016-11-17 11:30:16,806 2004 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The most popular from success category: 5The Rating: 5
+2016-11-17 11:30:16,846 2044 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The property name: teststring
+2016-11-17 11:30:16,933 2131 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@2e11485
+2016-11-17 11:30:17,000 2198 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-17 11:30:17,009 2207 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@7be58f16]
+2016-11-17 11:30:17,010 2208 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-17 11:30:17,023 2221 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-17 11:30:17,046 2244 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@44828f6b, edu.matc.entity.Category@2dbe250d, edu.matc.entity.Category@553f1d75]
+2016-11-17 11:30:17,060 2258 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@275fe372
+2016-11-17 11:30:17,086 2284 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@3f446bef
+2016-11-17 11:30:49,645 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-17 11:30:49,655 10   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-17 11:30:49,657 12   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-17 11:30:49,658 13   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-17 11:30:49,677 32   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-17 11:30:49,678 33   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-17 11:30:49,773 128  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-17 11:30:49,870 225  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-17 11:30:49,883 238  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-17 11:30:49,883 238  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-17 11:30:49,884 239  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-17 11:30:49,885 240  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-17 11:30:50,341 696  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-17 11:30:50,488 843  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-17 11:30:50,493 848  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-17 11:30:51,065 1420 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@3a6f2de3, edu.matc.entity.Affirmation@4b2a01d4, edu.matc.entity.Affirmation@8692d67, edu.matc.entity.Affirmation@78f5c518, edu.matc.entity.Affirmation@2f48b3d2, edu.matc.entity.Affirmation@34f7234e, edu.matc.entity.Affirmation@753432a2]
+2016-11-17 11:30:51,065 1420 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - Afflist size: 7
+2016-11-17 11:30:51,097 1452 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 10
+2016-11-17 11:30:51,118 1473 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - Popular affirmation rating8
+2016-11-17 11:30:51,138 1493 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 29
+2016-11-17 11:30:51,160 1515 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@7ce97ee5
+2016-11-17 11:30:51,196 1551 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@40f70521, edu.matc.entity.Affirmation@774698ab, edu.matc.entity.Affirmation@55342f40, edu.matc.entity.Affirmation@a4ca3f6, edu.matc.entity.Affirmation@72ea6193, edu.matc.entity.Affirmation@31aa3ca5]
+2016-11-17 11:30:51,196 1551 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - Afflist size good: 6
+2016-11-17 11:30:51,219 1574 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@3e10dc6]
+2016-11-17 11:30:51,226 1581 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@1021f6c9, edu.matc.entity.Affirmation@7516e4e5]
+2016-11-17 11:30:51,244 1599 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@4c398c80]
+2016-11-17 11:30:51,252 1607 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The most popular from success category: 5The Rating: 5
+2016-11-17 11:30:51,271 1626 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The property name: teststring
+2016-11-17 11:30:51,328 1683 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@2e11485
+2016-11-17 11:30:51,383 1738 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-17 11:30:51,396 1751 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@7be58f16]
+2016-11-17 11:30:51,396 1751 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-17 11:30:51,410 1765 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-17 11:30:51,429 1784 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@44828f6b, edu.matc.entity.Category@2dbe250d, edu.matc.entity.Category@553f1d75]
+2016-11-17 11:30:51,447 1802 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@275fe372
+2016-11-17 11:30:51,463 1818 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@3f446bef
+2016-11-17 11:31:14,057 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-17 11:31:14,063 6    [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-17 11:31:14,065 8    [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-17 11:31:14,068 11   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-17 11:31:14,086 29   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-17 11:31:14,087 30   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-17 11:31:14,160 103  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-17 11:31:14,235 178  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-17 11:31:14,240 183  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-17 11:31:14,241 184  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-17 11:31:14,241 184  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-17 11:31:14,242 185  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-17 11:31:14,605 548  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-17 11:31:14,736 679  [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-17 11:31:14,739 682  [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-17 11:31:15,263 1206 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@3a6f2de3, edu.matc.entity.Affirmation@4b2a01d4, edu.matc.entity.Affirmation@8692d67, edu.matc.entity.Affirmation@78f5c518, edu.matc.entity.Affirmation@2f48b3d2, edu.matc.entity.Affirmation@34f7234e, edu.matc.entity.Affirmation@753432a2]
+2016-11-17 11:31:15,264 1207 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - Afflist size: 7
+2016-11-17 11:31:15,308 1251 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 10
+2016-11-17 11:31:15,326 1269 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - Popular affirmation rating8
+2016-11-17 11:31:15,346 1289 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 29
+2016-11-17 11:31:15,363 1306 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@7ce97ee5
+2016-11-17 11:31:15,398 1341 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@40f70521, edu.matc.entity.Affirmation@774698ab, edu.matc.entity.Affirmation@55342f40, edu.matc.entity.Affirmation@a4ca3f6, edu.matc.entity.Affirmation@72ea6193, edu.matc.entity.Affirmation@31aa3ca5]
+2016-11-17 11:31:15,398 1341 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - Afflist size good: 6
+2016-11-17 11:31:15,426 1369 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@3e10dc6]
+2016-11-17 11:31:15,432 1375 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@1021f6c9, edu.matc.entity.Affirmation@7516e4e5]
+2016-11-17 11:31:15,447 1390 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@4c398c80]
+2016-11-17 11:31:15,457 1400 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The most popular from success category: 5The Rating: 5
+2016-11-17 11:31:15,479 1422 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The property name: teststring
+2016-11-17 11:31:15,521 1464 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@2e11485
+2016-11-17 11:31:15,561 1504 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-17 11:31:15,567 1510 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@7be58f16]
+2016-11-17 11:31:15,568 1511 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-17 11:31:15,578 1521 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-17 11:31:15,601 1544 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@44828f6b, edu.matc.entity.Category@2dbe250d, edu.matc.entity.Category@553f1d75]
+2016-11-17 11:31:15,611 1554 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@275fe372
+2016-11-17 11:31:15,627 1570 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@3f446bef
+2016-11-17 13:10:02,966 0    [main] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-11-17 13:10:02,976 10   [main] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2016-11-17 13:10:02,981 15   [main] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-11-17 13:10:02,983 17   [main] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-11-17 13:10:03,013 47   [main] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2016-11-17 13:10:03,013 47   [main] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2016-11-17 13:10:03,141 175  [main] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2016-11-17 13:10:03,283 317  [main] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2016-11-17 13:10:03,292 326  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/affirmation_db]
+2016-11-17 13:10:03,293 327  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2016-11-17 13:10:03,293 327  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2016-11-17 13:10:03,294 328  [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2016-11-17 13:10:03,837 871  [main] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-11-17 13:10:03,999 1033 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-11-17 13:10:04,007 1041 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-11-17 13:10:04,784 1818 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@7e7b159b, edu.matc.entity.Affirmation@293a5f75, edu.matc.entity.Affirmation@fcb4004, edu.matc.entity.Affirmation@1dd6d4b7, edu.matc.entity.Affirmation@56e8b606, edu.matc.entity.Affirmation@2dd29a59, edu.matc.entity.Affirmation@784c3487]
+2016-11-17 13:10:04,785 1819 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - Afflist size: 7
+2016-11-17 13:10:04,849 1883 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The delete id is: 10
+2016-11-17 13:10:04,891 1925 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - Popular affirmation rating8
+2016-11-17 13:10:04,940 1974 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The id of the added Affirmation: 29
+2016-11-17 13:10:04,986 2020 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation is: edu.matc.entity.Affirmation@765f05af
+2016-11-17 13:10:05,020 2054 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The affirmation list is: [edu.matc.entity.Affirmation@5d2a4eed, edu.matc.entity.Affirmation@57459491, edu.matc.entity.Affirmation@3f0846c6, edu.matc.entity.Affirmation@77a98a6a, edu.matc.entity.Affirmation@78fbff54, edu.matc.entity.Affirmation@3e10dc6]
+2016-11-17 13:10:05,020 2054 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - Afflist size good: 6
+2016-11-17 13:10:05,059 2093 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@6aecbb8d]
+2016-11-17 13:10:05,064 2098 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The list of aff by category: [edu.matc.entity.Affirmation@4c398c80, edu.matc.entity.Affirmation@7fc6de5b]
+2016-11-17 13:10:05,095 2129 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@34997338]
+2016-11-17 13:10:05,103 2137 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The most popular from success category: 5The Rating: 5
+2016-11-17 13:10:05,139 2173 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - The property name: teststring
+2016-11-17 13:10:05,223 2257 [main] INFO  edu.matc.persistence.AffirmationDaoTest  - This is the update test: edu.matc.entity.Affirmation@40f1be1b
+2016-11-17 13:10:05,277 2311 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The delete id is: 3
+2016-11-17 13:10:05,289 2323 [main] INFO  edu.matc.persistence.CategoryDao  - Category from id name success: Success List size of cat [edu.matc.entity.Category@71b3bc45]
+2016-11-17 13:10:05,289 2323 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category id for success: 4
+2016-11-17 13:10:05,306 2340 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The id of the added category: 10
+2016-11-17 13:10:05,332 2366 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category list is: [edu.matc.entity.Category@54227100, edu.matc.entity.Category@6b5894c8, edu.matc.entity.Category@1433046b]
+2016-11-17 13:10:05,344 2378 [main] INFO  edu.matc.persistence.CategoryDaoTest  - The category is: edu.matc.entity.Category@2dbf4cbd
+2016-11-17 13:10:05,366 2400 [main] INFO  edu.matc.persistence.CategoryDaoTest  - This is the update test: edu.matc.entity.Category@83298d7
