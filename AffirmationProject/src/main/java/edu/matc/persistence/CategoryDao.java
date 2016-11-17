@@ -24,6 +24,7 @@ public class CategoryDao {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         categoryList = session.createCriteria(Category.class).list();
 
+        session.close();
         return categoryList;
     }
 
@@ -32,6 +33,7 @@ public class CategoryDao {
 
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Category category = (Category) session.get(Category.class, categoryId);
+        session.close();
         return category;
 
     }
@@ -133,11 +135,13 @@ public class CategoryDao {
         categoryList = query.list();
 
         category = categoryList.get(0);
+
         log.info("Category from id name success: " + category.getCategoryName() + " List size of cat " + categoryList);
 
         int catId = category.getCatgoryId();
 
 
+        session.close();
 
         return catId;
     }

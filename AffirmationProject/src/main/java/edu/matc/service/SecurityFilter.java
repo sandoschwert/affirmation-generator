@@ -7,6 +7,8 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.Provider;
 import java.io.IOException;
 import java.util.List;
+import java.util.Properties;
+import java.util.ResourceBundle;
 import java.util.StringTokenizer;
 
 /**
@@ -19,11 +21,33 @@ public class SecurityFilter implements ContainerRequestFilter {
     private static final String AUTHORIZATION_HEADER_PREFIX = "Basic ";
     private static final String SECURED_URL_PREFIX = "affirmationservice";
 
+    private Properties properties;
+    private String propertiesFilePath = "/api_config.properties";
 
+
+    /**
+     * Loads the properties file based on the path argument passed to it.
+     *
+     */
+    public void loadProperties(String propertiesFilePath) {
+
+        properties = new Properties();
+        try {
+            properties.load(this.getClass().getResourceAsStream(propertiesFilePath));
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
+        } catch (Exception exception) {
+            exception.printStackTrace();
+        }
+    }
 
     @Override
     public void filter(ContainerRequestContext requestContext) throws IOException {
 
+        loadProperties(propertiesFilePath);
+
+        String usernameProp = properties.getProperty("user.name");
+        String passwordProp = properties.getProperty("password");
 
         if (requestContext.getUriInfo().getPath().contains(SECURED_URL_PREFIX)) {
 
@@ -41,7 +65,7 @@ public class SecurityFilter implements ContainerRequestFilter {
                     String password = tokenizer.nextToken();
 
                     // This sets the user name and password
-                    if ("user".equals(username) && "password".equals(password)) {
+                    if (usernameProp.equals(username) && passwordProp.equals(password)) {
                         return;
                     }
                 }

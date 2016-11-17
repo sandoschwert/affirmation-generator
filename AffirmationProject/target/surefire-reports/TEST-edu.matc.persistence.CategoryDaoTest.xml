@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="edu.matc.persistence.CategoryDaoTest" time="0.093" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="edu.matc.persistence.CategoryDaoTest" time="0.054" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,10 +62,10 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="edu.matc.persistence.CategoryDaoTest" name="deleteCategory" time="0.022"/>
-  <testcase classname="edu.matc.persistence.CategoryDaoTest" name="getCategoryIdByName" time="0.016"/>
-  <testcase classname="edu.matc.persistence.CategoryDaoTest" name="addCategory" time="0.014"/>
-  <testcase classname="edu.matc.persistence.CategoryDaoTest" name="getAllCategories" time="0.008"/>
-  <testcase classname="edu.matc.persistence.CategoryDaoTest" name="getACategoryWithId" time="0.012"/>
-  <testcase classname="edu.matc.persistence.CategoryDaoTest" name="updateCategory" time="0.02"/>
+  <testcase classname="edu.matc.persistence.CategoryDaoTest" name="deleteCategory" time="0.012"/>
+  <testcase classname="edu.matc.persistence.CategoryDaoTest" name="getCategoryIdByName" time="0.009"/>
+  <testcase classname="edu.matc.persistence.CategoryDaoTest" name="addCategory" time="0.006"/>
+  <testcase classname="edu.matc.persistence.CategoryDaoTest" name="getAllCategories" time="0.012"/>
+  <testcase classname="edu.matc.persistence.CategoryDaoTest" name="getACategoryWithId" time="0.006"/>
+  <testcase classname="edu.matc.persistence.CategoryDaoTest" name="updateCategory" time="0.008"/>
 </testsuite>

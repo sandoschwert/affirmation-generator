@@ -19,13 +19,71 @@ public class AffirmationDao {
 
 
     public List<Affirmation> getAllAffirmations() {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+
+        CategoryDao categoryDao = new CategoryDao();
 
         List<Affirmation> affirmationList = new ArrayList<Affirmation>();
+
         Transaction trns = null;
-        Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        affirmationList = session.createCriteria(Affirmation.class).list();
+
+        try {
+
+            trns = session.beginTransaction();
+            String hql = "FROM affirmations ORDER BY rating desc";
+            Query query = session.createQuery(hql);
+            affirmationList = query.list();
+            session.getTransaction().commit();
+
+
+        } catch (RuntimeException e) {
+            if (trns != null) {
+                trns.rollback();
+            }
+            log.info("There was a runtime exception to delete affirmation: " + e);
+
+        } finally {
+            session.flush();
+            session.close();
+        }
 
         return affirmationList;
+    }
+
+    //Get all affirmations
+    public List<Affirmation> getAllGoodAffirmations() {
+
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+
+        CategoryDao categoryDao = new CategoryDao();
+
+        List<Affirmation> affirmationList = new ArrayList<Affirmation>();
+
+        Transaction trns = null;
+
+        try {
+
+            trns = session.beginTransaction();
+            String hql = "FROM affirmations af WHERE af.categoryId != :categoryId";
+            Query query = session.createQuery(hql);
+            query.setInteger("categoryId", 10);
+            affirmationList = query.list();
+            session.getTransaction().commit();
+
+
+        } catch (RuntimeException e) {
+            if (trns != null) {
+                trns.rollback();
+            }
+            log.info("There was a runtime exception to delete affirmation: " + e);
+
+        } finally {
+            session.flush();
+            session.close();
+        }
+
+        return affirmationList;
+
     }
 
 
@@ -33,6 +91,7 @@ public class AffirmationDao {
 
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Affirmation affirmation = (Affirmation) session.get(Affirmation.class, affirmationId);
+        session.close();
         return affirmation;
 
     }
@@ -206,6 +265,42 @@ public class AffirmationDao {
             String hql = "FROM affirmations af WHERE af.categoryId = :categoryId";
             Query query = session.createQuery(hql);
             query.setInteger("categoryId",categoryId);
+            affirmationList = query.list();
+            session.getTransaction().commit();
+
+
+        } catch (RuntimeException e) {
+            if (trns != null) {
+                trns.rollback();
+            }
+            log.info("There was a runtime exception to delete affirmation: " + e);
+
+        } finally {
+            session.flush();
+            session.close();
+        }
+
+        return affirmationList;
+
+    }
+
+    //get the most popular affirmation by category
+    public List<Affirmation> getMostPopularAffirmations(String categoryName, int howManyToGet) {
+
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        CategoryDao categoryDao = new CategoryDao();
+        List<Affirmation> affirmationList = new ArrayList<Affirmation>();
+        int categoryId = categoryDao.getCategoryIdOfCategory(categoryName);
+        Transaction trns = null;
+
+        try {
+
+            trns = session.beginTransaction();
+            String hql = "FROM affirmations af WHERE af.categoryId = :categoryId ORDER BY af.rating desc";
+            Query query = session.createQuery(hql);
+            query.setInteger("categoryId",categoryId);
+            query.setFirstResult(0);
+            query.setMaxResults(howManyToGet);
             affirmationList = query.list();
             session.getTransaction().commit();
 
