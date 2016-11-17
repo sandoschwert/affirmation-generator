@@ -11,13 +11,22 @@ import org.hibernate.Transaction;
 import java.util.*;
 
 /**
- * Created by toddkinsman on 10/18/16.
+ *
+ *  This is the data access object for the affirmation table.
+ *
+ *  @author Todd Kinsman
+ *  @since 10/18/16
  */
 public class AffirmationDao {
 
     private final Logger log = Logger.getLogger(this.getClass());
 
-
+    /**
+     * Gets all affirmations from the affirmation table
+     *
+     * @return affirmations
+     * Returns the list of Affirmations.
+     */
     public List<Affirmation> getAllAffirmations() {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
 
@@ -50,7 +59,12 @@ public class AffirmationDao {
         return affirmationList;
     }
 
-    //Get all affirmations
+    /**
+     * Gets all non-nsfw affirmations from the affirmation table
+     *
+     * @return affirmations
+     * Returns the list of Affirmations.
+     */
     public List<Affirmation> getAllGoodAffirmations() {
 
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
@@ -86,7 +100,13 @@ public class AffirmationDao {
 
     }
 
-
+    /**
+     * Gets an affirmations from the affirmation table based on id
+     *
+     * @param affirmationId the id of affirmation to retrieve
+     * @return affirmation
+     * Returns an Affirmation.
+     */
     public Affirmation getAffirmationWithId(int affirmationId) {
 
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
@@ -97,6 +117,13 @@ public class AffirmationDao {
     }
 
 
+    /**
+     * Adds an affirmation object to the affirmation table
+     *
+     * @param  affirmation the affirmation to add
+     * @return id of added affirmation
+     * Returns the list of Affirmations.
+     */
     public int addAffirmation(Affirmation affirmation) {
 
         Transaction trns = null;
@@ -124,6 +151,13 @@ public class AffirmationDao {
         return id;
     }
 
+    /**
+     * Updates the rating of an affirmation in the affirmation table by increments of 1
+     *
+     * @param affirmationId the id of the affirmation to update
+     * @return rating of the updated affirmation
+     *
+     */
     public int downVoteAffirmation(int affirmationId) {
 
         Affirmation affirmation = getAffirmationWithId(affirmationId);
@@ -159,6 +193,13 @@ public class AffirmationDao {
         return affdownCount;
     }
 
+    /**
+     * Updates the rating of an affirmation in the affirmation table by decrements of 1
+     *
+     * @param  affirmationId the id of affirmation to upvote
+     * @return rating of the updated affirmation
+     *
+     */
     public int upVoteAffirmation(int affirmationId) {
 
         int affUpCount;
@@ -193,6 +234,12 @@ public class AffirmationDao {
         return affUpCount;
     }
 
+    /**
+     * Updates  an affirmation in the affirmation table
+     * @param affirmation the affirmation to update
+     * @return id of the updated affirmation
+     *
+     */
     public int updateAffirmation(Affirmation affirmation) {
 
         Transaction trns = null;
@@ -220,6 +267,12 @@ public class AffirmationDao {
         return id;
     }
 
+    /**
+     * Deletes the affirmation in the affirmation table
+     * @param affirmation object to delete
+     * @return int showing success of 1 or failure with 0
+     *
+     */
     public int deleteAffirmation(Affirmation affirmation) {
 
         int confirm;
@@ -248,6 +301,14 @@ public class AffirmationDao {
         return confirm;
     }
 
+    /**
+     * Gets all affirmations from the affirmation table based on category
+     *
+     * @param categoryName String of category name
+     * @return affirmations
+     *
+     * Returns the list of Affirmations by category.
+     */
     public List<Affirmation> getAllAffirmationsFromCategory(String categoryName) {
 
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
@@ -284,7 +345,14 @@ public class AffirmationDao {
 
     }
 
-    //get the most popular affirmation by category
+    /**
+     * Gets all affirmations from the affirmation table sorted by most popular ratings
+     *
+     * @param categoryName String for name of category to retrieve
+     * @param howManyToGet int of how many affirmation objects to get back
+     * @return affirmations
+     * Returns the list of Affirmations.
+     */
     public List<Affirmation> getMostPopularAffirmations(String categoryName, int howManyToGet) {
 
         Session session = SessionFactoryProvider.getSessionFactory().openSession();

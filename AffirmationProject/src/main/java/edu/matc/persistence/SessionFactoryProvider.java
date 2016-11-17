@@ -14,6 +14,9 @@ public class SessionFactoryProvider {
 
     private static SessionFactory sessionFactory;
 
+    /**
+     * Creates session factory that will be used with Hibernate
+     */
     public static void createSessionFactory() {
 
         Configuration configuration = new Configuration();
@@ -23,6 +26,10 @@ public class SessionFactoryProvider {
         sessionFactory = configuration.buildSessionFactory(serviceRegistry);
     }
 
+    /**
+     * Gets session factory and instantiates one if not already created.
+     * @return sessionFactory SessionFactory
+     */
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             createSessionFactory();

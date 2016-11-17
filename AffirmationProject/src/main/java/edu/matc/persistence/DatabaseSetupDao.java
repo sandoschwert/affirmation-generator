@@ -11,12 +11,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by toddkinsman on 11/9/16.
+ *
+ *  This is the data access object for setting up the test database.
+ *
+ *  @author Todd Kinsman
+ *  @since 10/18/16
  */
 public class DatabaseSetupDao {
 
     private final Logger log = Logger.getLogger(this.getClass());
 
+    /**
+     *  Clears all data from the category table for clean testing
+     */
     public void clearAllDataFromCategoryTable() {
         Transaction trns = null;
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
@@ -39,6 +46,9 @@ public class DatabaseSetupDao {
 
     }
 
+    /**
+     *  clears all data from the affirmation table for clean testing
+     */
     public void clearAllDataFromAffirmationTable() {
 
         Transaction trns = null;
@@ -62,6 +72,10 @@ public class DatabaseSetupDao {
 
     }
 
+    /**
+     *  One function that calls functions to clear data from the category
+     *  and affirmation tables
+     */
     public void clearAllDatabaseTables() {
 
         clearAllDataFromAffirmationTable();

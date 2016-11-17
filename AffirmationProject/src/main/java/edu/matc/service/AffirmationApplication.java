@@ -6,13 +6,16 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by toddkinsman on 10/27/16.
+ * A class that defines the service wrapper for related
+ * web service classes
+ *
+ * @author Todd Kinsman
+ * @since 10/18/16
+ *
  */
 
 //Defines the base URI for all resource URIs.
 @ApplicationPath("/")
-
-
 public class AffirmationApplication extends Application {
 
     //The method returns a non-empty collection with classes, that must be included in the published JAX-RS application

@@ -11,12 +11,22 @@ import org.hibernate.Transaction;
 import java.util.*;
 
 /**
- * Created by toddkinsman on 10/18/16.
+ *
+ *  This is the data access object for the category table.
+ *
+ *  @author Todd Kinsman
+ *  @since 10/18/16
  */
 public class CategoryDao {
 
     private final Logger log = Logger.getLogger(this.getClass());
 
+    /**
+     * Gets all categories from the affirmation table
+     *
+     * @return affirmations
+     * Returns the list of Affirmations.
+     */
     public List<Category> getAllCategories() {
 
         List<Category> categoryList = new ArrayList<Category>();
@@ -28,7 +38,13 @@ public class CategoryDao {
         return categoryList;
     }
 
-
+    /**
+     * Gets an category from the catgory table based on id
+     *
+     * @param categoryId the id of affirmation to retrieve
+     * @return category
+     * Returns a Category.
+     */
     public Category getACategoryWithId(int categoryId) {
 
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
@@ -38,7 +54,13 @@ public class CategoryDao {
 
     }
 
-
+    /**
+     * Adds an Category object to the category table
+     *
+     * @param  category the Category to add
+     * @return id of added category
+     * Returns the list of categories.
+     */
     public int addCategory(Category category) {
 
         Transaction trns = null;
@@ -66,6 +88,13 @@ public class CategoryDao {
         return id;
     }
 
+    /**
+     * Updates the category in the category table
+     *
+     * @param category the category to update
+     * @return id int of the updated category
+     *
+     */
     public int updateCategory(Category category) {
 
         Transaction trns = null;
@@ -93,6 +122,12 @@ public class CategoryDao {
         return id;
     }
 
+    /**
+     * Deletes the category in the category table
+     * @param category object to delete
+     * @return int showing success of 1 or failure with 0
+     *
+     */
     public int deleteCategory(Category category) {
 
         Transaction trns = null;
@@ -122,6 +157,13 @@ public class CategoryDao {
         return sucInt;
     }
 
+    /**
+     * Gets an categoryid from the catgory table based on category
+     *
+     * @param categoryName to get retrieve id from
+     * @return categoryId
+     * Returns a categoryId.
+     */
     public int getCategoryIdOfCategory(String categoryName) {
 
         Session session = SessionFactoryProvider.getSessionFactory().openSession();

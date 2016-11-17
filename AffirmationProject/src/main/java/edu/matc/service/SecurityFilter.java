@@ -12,7 +12,14 @@ import java.util.ResourceBundle;
 import java.util.StringTokenizer;
 
 /**
- * Created by toddkinsman on 11/9/16.
+ *
+ * The Security filter used to add basic authentication for the webservice.
+ * It creates the filter necessary to limit access to the webservice to those
+ * who know the user name and password.
+ * It protects all URIs of the affirmationservice.
+ *
+ * @author Todd Kinsman
+ * @since 11/9/16.
  */
 @Provider
 public class SecurityFilter implements ContainerRequestFilter {
@@ -27,7 +34,7 @@ public class SecurityFilter implements ContainerRequestFilter {
 
     /**
      * Loads the properties file based on the path argument passed to it.
-     *
+     * @param propertiesFilePath String path where property file is located
      */
     public void loadProperties(String propertiesFilePath) {
 

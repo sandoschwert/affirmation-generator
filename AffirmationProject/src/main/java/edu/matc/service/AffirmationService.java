@@ -18,7 +18,11 @@ import javax.servlet.*;
 
 
 /**
- * Created by toddkinsman on 10/27/16.
+ * The affirmation web service class that defines the endpoints
+ * for the affirmation api webservice
+ *
+ * @author Todd Kinsman
+ * @since 10/27/16
  */
 @Path("/affirmationservice")
 public class AffirmationService  {
@@ -29,8 +33,8 @@ public class AffirmationService  {
     private static final String FAILURE_RESULT="<result>failure</result>";
 
     /**
-     *
-     * @return
+     * Function for endpoint to retrieve all non-nsfw affirmations
+     * @return affirmationList List<Affirmation>
      */
     @GET
     @Path("/affirmations")
@@ -42,8 +46,8 @@ public class AffirmationService  {
     }
 
     /**
-     *
-     * @return
+     * Function for endpoint to retrieve all affirmations, including nsfw
+     * @return affirmationList List<Affirmation>
      */
     @GET
     @Path("/nsfw/affirmations")
@@ -55,8 +59,9 @@ public class AffirmationService  {
     }
 
     /**
-     *
-     * @return
+     * Function for endpoint to retrieve all affirmations with a limit
+     * @param limit int defining limit to affirmations to retrieve
+     * @return affirmationList List<Affirmation>
      */
     @GET
     @Path("/nsfw/affirmations/limit/{limit}")
@@ -72,8 +77,9 @@ public class AffirmationService  {
     }
 
     /**
-     *
-     * @return
+     * Function for endpoint to retrieve all non-nsfw affirmations with a limit
+     * @param limit int defining limit to affirmations to retrieve
+     * @return affirmationList List<Affirmation>
      */
     @GET
     @Path("/affirmations/limit/{limit}")
@@ -89,8 +95,9 @@ public class AffirmationService  {
     }
 
     /**
-     *
-     * @return
+     * Function for endpoint to retrieve an affirmation with a id
+     * @param affirmationId int of affirmation to retrieve
+     * @return affirmation Affirmation
      */
     @GET
     @Path("/affirmations/{affirmationId}")
@@ -103,8 +110,12 @@ public class AffirmationService  {
 
 
     /**
-     *
-     * @return
+     * Function for endpoint to add affiraiton to affirmation table, not yet available
+     * to endusers
+     * @param affirmationId int of affirmation to add, to be deprecated.
+     * @param phrase text phrase to add.
+     * @param categoryid int the id of the category to add to. Will change to human readable in next version.
+     * @return String success or failure
      */
     @POST
     @Path("/affirmations")
@@ -125,8 +136,10 @@ public class AffirmationService  {
     }
 
     /**
-     *
-     * @return
+     * Function for endpoint to update an affirmation rating given id. Rating
+     * will be incremented by 1.
+     * @param affirmationId int of affirmation to update
+     * @return affirmation Affirmation incremented
      */
     @PUT
     @Path("/affirmations/upvote/{affirmationId}")
@@ -141,8 +154,10 @@ public class AffirmationService  {
     }
 
     /**
-     *
-     * @return
+     * Function for endpoint to update an affirmation rating given id. Rating
+     * will be decremented by 1.
+     * @param affirmationId int of affirmation to downvote
+     * @return affirmation Affirmation decremented
      */
     @PUT
     @Path("/affirmations/downvote/{affirmationId}")
@@ -157,8 +172,9 @@ public class AffirmationService  {
     }
 
     /**
-     *
-     * @return
+     * Function for endpoint to retrieve all affirmations given a category name
+     * @param categoryName String of affirmation category
+     * @return affirmationList List<Affirmation>
      */
     @GET
     @Path("/affirmations/categories/{categoryName}")
@@ -174,8 +190,10 @@ public class AffirmationService  {
     }
 
     /**
-     *
-     * @return
+     * Function for endpoint to retrieve all popular affirmations given a category name
+     * @param categoryName String of affirmation category
+     * @param limit int limit of affirmations returned
+     * @return affirmationList List<Affirmation>
      */
     @GET
     @Path("/affirmations/popular/{categoryName}/{limit}")
@@ -189,8 +207,10 @@ public class AffirmationService  {
 
 
     /**
-     *
-     * @return
+     * Function for endpoint to retrieve all affirmations given a category name with limit
+     * @param categoryName String of affirmation category
+     * @param limit int to limit number of affirmations returned
+     * @return affirmationList List<Affirmation>
      */
     @GET
     @Path("/affirmations/categories/{categoryName}/{limit}")
@@ -206,7 +226,12 @@ public class AffirmationService  {
 
     }
 
-
+    /**
+     * The function used to create a list of a specific size
+     * @param affirmations List<Affirmation> to limit
+     * @param limit int for list limit
+     * @return affirmations List<Affirmation> with of specified limit
+     */
     public List<Affirmation> getLimitedList(List<Affirmation> affirmations, int limit) {
 
         List<Affirmation> resultLimit = new ArrayList<Affirmation>();
