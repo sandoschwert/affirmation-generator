@@ -75,8 +75,7 @@ public class CategoryDao {
             if (trns != null) {
                 trns.rollback();
             }
-            //Todo Take this print out!
-            e.printStackTrace();
+
             log.info("There was a runtime exception to add category loc: " + e);
 
         } finally {
@@ -109,8 +108,6 @@ public class CategoryDao {
             if (trns != null) {
                 trns.rollback();
             }
-            //Todo Take this print out!
-            e.printStackTrace();
             log.info("There was a runtime exception to add category loc: " + e);
 
         } finally {
@@ -145,8 +142,6 @@ public class CategoryDao {
                 trns.rollback();
             }
             sucInt = 0;
-            //Todo Take this print out!
-            e.printStackTrace();
             log.info("There was a runtime exception to add category loc: " + e);
 
         } finally {

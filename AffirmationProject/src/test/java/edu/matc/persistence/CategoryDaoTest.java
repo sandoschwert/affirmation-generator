@@ -13,7 +13,10 @@ import static org.junit.Assert.*;
 
 
 /**
- * Created by toddkinsman on 10/24/16.
+ * Test class for category dao class. Tests all functions work using junit.
+ *
+ * @author Todd Kinsman
+ * @since 10/24/16.
  */
 public class CategoryDaoTest {
 
@@ -30,6 +33,9 @@ public class CategoryDaoTest {
 
     DatabaseSetupDao databaseSetupDao;
 
+    /**
+     * The setup for the tests. Clears test database, adds need test data.
+     */
     @Before
     public void setup() {
 
@@ -48,6 +54,10 @@ public class CategoryDaoTest {
 
     }
 
+    /**
+     * Test to get all categories.
+     * @throws Exception
+     */
     @Test
     public void getAllCategories() throws Exception {
 
@@ -59,6 +69,10 @@ public class CategoryDaoTest {
 
     }
 
+    /**
+     * Test to get a category by Id
+     * @throws Exception
+     */
     @Test
     public void getACategoryWithId() throws Exception {
 
@@ -71,6 +85,10 @@ public class CategoryDaoTest {
 
     }
 
+    /**
+     * Test to add a category.
+     * @throws Exception
+     */
     @Test
     public void addCategory() throws Exception {
 
@@ -80,6 +98,11 @@ public class CategoryDaoTest {
 
     }
 
+    /**
+     * Test to update a category.
+     *
+     * @throws Exception
+     */
     @Test
     public void updateCategory() throws Exception {
 
@@ -98,6 +121,11 @@ public class CategoryDaoTest {
         assertEquals("Category update not successful", categoryNameUp, updatedCatName);
     }
 
+    /**
+     * Test to delete a category
+     *
+     * @throws Exception
+     */
     @Test
     public void deleteCategory() throws Exception {
         Category category = new Category();
@@ -109,6 +137,9 @@ public class CategoryDaoTest {
         assertEquals("Didn't delete category", 1, delResponse);
     }
 
+    /**
+     * Test to get category id given category name.
+     */
     @Test
     public void getCategoryIdByName() {
 

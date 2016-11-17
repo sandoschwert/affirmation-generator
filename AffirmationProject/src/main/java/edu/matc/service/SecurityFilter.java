@@ -1,5 +1,6 @@
 package edu.matc.service;
 
+import org.apache.log4j.Logger;
 import org.glassfish.jersey.internal.util.Base64;
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerRequestFilter;
@@ -28,6 +29,8 @@ public class SecurityFilter implements ContainerRequestFilter {
     private static final String AUTHORIZATION_HEADER_PREFIX = "Basic ";
     private static final String SECURED_URL_PREFIX = "affirmationservice";
 
+    private final Logger log = Logger.getLogger(this.getClass());
+
     private Properties properties;
     private String propertiesFilePath = "/api_config.properties";
 
@@ -42,9 +45,9 @@ public class SecurityFilter implements ContainerRequestFilter {
         try {
             properties.load(this.getClass().getResourceAsStream(propertiesFilePath));
         } catch (IOException ioException) {
-            ioException.printStackTrace();
+            log.info("Error found in propertis load: " + ioException);
         } catch (Exception exception) {
-            exception.printStackTrace();
+            log.info("Error found in propertis load: " + exception);
         }
     }
 

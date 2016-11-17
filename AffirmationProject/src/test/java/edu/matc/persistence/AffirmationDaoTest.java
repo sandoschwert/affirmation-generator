@@ -14,7 +14,12 @@ import java.util.Properties;
 import static org.junit.Assert.*;
 
 /**
- * Created by toddkinsman on 10/24/16.
+ *
+ * Test class for the affirmation dao tests. Clears the test database, creates test data, and tests all
+ * affirmation dao functions.
+ *
+ * @author Todd Kinsman
+ * @since 10/24/16.
  */
 public class AffirmationDaoTest {
 
@@ -42,12 +47,15 @@ public class AffirmationDaoTest {
 //    in the test/resources dir looks to the hibernate file there first
 //    can do it for the lo4j logging files as well
 
+    /**
+     * Setup for test. Clears database and creates fake data.
+     */
     @Before
     public void setup() {
         //properties path
         propertiesFilePath = "/api_config.properties";
 
-        // load the properites file and writer
+        // load the properties file and writer
         loadProperties(propertiesFilePath);
 
         databaseSetupDao = new DatabaseSetupDao();
@@ -73,6 +81,11 @@ public class AffirmationDaoTest {
 
     }
 
+    /**
+     * Test gets all bad affirmations
+     *
+     * @throws Exception
+     */
     @Test
     public void getAllAffirmationsWithBad() throws Exception {
 
@@ -86,6 +99,10 @@ public class AffirmationDaoTest {
         assertNotNull(affirmationList);
     }
 
+    /**
+     * Test gets all non-nsfw affirmations
+     * @throws Exception
+     */
     @Test
     public void getAllAffirmationsGood() throws Exception {
 
@@ -99,6 +116,11 @@ public class AffirmationDaoTest {
         assertEquals("List size suggests bad aff included", 6, affirmationCount);
     }
 
+    /**
+     * Test get all affirmations by id
+     *
+     * @throws Exception
+     */
     @Test
     public void getAffirmationWithId() throws Exception {
 
@@ -109,6 +131,11 @@ public class AffirmationDaoTest {
         assertNotNull(affirmation);
     }
 
+    /**
+     * Test to add an affirmation
+     *
+     * @throws Exception
+     */
     @Test
     public void addAffirmation() throws Exception {
 
@@ -118,6 +145,11 @@ public class AffirmationDaoTest {
 
     }
 
+    /**
+     * Test to update an affirmation
+     *
+     * @throws Exception
+     */
     @Test
     public void updateAffirmation() throws Exception {
 
@@ -134,7 +166,11 @@ public class AffirmationDaoTest {
         assertEquals("The update did not work", updatePhrase, retrievedUpdatePhrase);
     }
 
-
+    /**
+     * Test to delete an affirmation
+     *
+     * @throws Exception
+     */
     @Test
     public void deleteAffirmation() throws Exception {
 
@@ -149,6 +185,9 @@ public class AffirmationDaoTest {
 
     }
 
+    /**
+     *  Test to get an affirmation by category
+     */
     @Test
     public void getAffFromCategoryTest() {
 
@@ -161,6 +200,9 @@ public class AffirmationDaoTest {
         assertEquals("The category name didn't get results", 2, affirmationList.size());
     }
 
+    /**
+     * Test to get most popular affirmation by category with limit
+     */
     @Test
     public void testMostPopularByCategoryWithLimit() {
 
@@ -177,6 +219,9 @@ public class AffirmationDaoTest {
 
     }
 
+    /**
+     * Test to get most popular affirmations with given limit
+     */
     @Test
     public void testMostPopulaWithLimit() {
 
@@ -192,6 +237,9 @@ public class AffirmationDaoTest {
 
     }
 
+    /**
+     * Testing the upvote of an affirmation rating.
+     */
     @Test
     public void testUpvote() {
 
@@ -203,6 +251,9 @@ public class AffirmationDaoTest {
         assertEquals("The upvote count is off", 7, voteCount);
     }
 
+    /**
+     * Test the downvote of an affirmation rating.
+     */
     @Test
     public void testDownvote() {
 
@@ -229,12 +280,15 @@ public class AffirmationDaoTest {
         try {
             properties.load(this.getClass().getResourceAsStream(propertiesFilePath));
         } catch (IOException ioException) {
-            ioException.printStackTrace();
+            log.info(ioException);
         } catch (Exception exception) {
-            exception.printStackTrace();
+            log.info(exception);
         }
     }
 
+    /**
+     * test the loading of the properties config file
+     */
     @Test
     public void testPropertiesfile() {
 

@@ -138,8 +138,6 @@ public class AffirmationDao {
             if (trns != null) {
                 trns.rollback();
             }
-            //Todo Take this print out!
-            e.printStackTrace();
             log.info("There was a runtime exception to add affirmation: " + e);
 
         } finally {
@@ -180,9 +178,6 @@ public class AffirmationDao {
             }
 
             affdownCount = affirmation.getRating();
-
-            //Todo Take this print out!
-            e.printStackTrace();
             log.info("There was a runtime exception to update affirmation: " + e);
 
         } finally {
@@ -221,9 +216,6 @@ public class AffirmationDao {
             }
 
             affUpCount = affirmation.getRating();
-
-            //Todo Take this print out!
-            e.printStackTrace();
             log.info("There was a runtime exception to update affirmation: " + e);
 
         } finally {
@@ -254,8 +246,6 @@ public class AffirmationDao {
             if (trns != null) {
                 trns.rollback();
             }
-            //Todo Take this print out!
-            e.printStackTrace();
             log.info("There was a runtime exception to update affirmation: " + e);
 
         } finally {
@@ -289,8 +279,7 @@ public class AffirmationDao {
             if (trns != null) {
                 trns.rollback();
             }
-            //Todo Take this print out!
-            e.printStackTrace();
+
             log.info("There was a runtime exception to delete affirmation: " + e);
             confirm = 0;
         } finally {
