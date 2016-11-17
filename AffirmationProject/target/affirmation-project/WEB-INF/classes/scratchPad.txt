@@ -1,25 +1,45 @@
 Different Endpoints:
 
-Get All Affirmations Except NSFW
-Get All Aff Includeing NSFW
+DONE Get All Affirmations Except NSFW
+DONE Get All Aff Includeing NSFW
 
 DONE Get aff by id
 
 DONE Get All Aff with Category X
 DONE Get n number aff with Category X
 
-Get most popular aff of ONE category
-Get most popular aff for allCa
+DONE Get most popular aff of ONE category
+
+DONE Get most popular aff for allCa
 
 DONE Post up/down vote to one aff
 
 Remaining To Do:
 
+Endpoints:
+
+- Get all good affirmations (DEFAULT)
+/affirmations
+/affirmations/limit/{limit}
+
+- Get all affirmaitons, including nsfw
+/nsfw/affirmations/
+/nsfw/affirmations/limit/{limit}
+
+- Upvote Affimration
+/affirmations/upvote/{affirmationId}
+
+- Downvote Affirmation
+/affirmations/downvote/{affirmationId}
+
+- Get all affirmaitons from category
+/affirmations/categories/{categoryName}
+/affirmations/categories/{categoryName}/{limit}
+
+- Get most popular of category
+/affirmations/categories/{categoryName}/{limit}
+
+
 - Add comments to code
-- Create documentation (great example that Paula shared with us in the 'help' section of Slack
-    - we talked about perhaps give sample code for creating a dropdown list using the api
-    - most importantly the documentation needs to include the correction names/syntax for request parameters when requesting category names
-- Create a simple app to demonstrate the api
-- Finishing Remaining Endpoints in list above
-- Add tests for new API endpoints and additions to the dao (or at least for the dao)
+
 

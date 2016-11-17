@@ -2,6 +2,7 @@ package edu.matc.service;
 
 import edu.matc.entity.Affirmation;
 import edu.matc.persistence.AffirmationDao;
+import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ import javax.servlet.*;
 @Path("/affirmationservice")
 public class AffirmationService  {
 
+    private final Logger log = Logger.getLogger(this.getClass());
     AffirmationDao affirmationDao = new AffirmationDao();
     private static final String SUCCESS_RESULT="<result>success</result>";
     private static final String FAILURE_RESULT="<result>failure</result>";
@@ -35,6 +37,19 @@ public class AffirmationService  {
     @Produces(MediaType.APPLICATION_JSON)
     public List<Affirmation> getAffirmations() {
 
+        List<Affirmation> affirmationList = affirmationDao.getAllGoodAffirmations();
+        return affirmationList;
+    }
+
+    /**
+     *
+     * @return
+     */
+    @GET
+    @Path("/nsfw/affirmations")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Affirmation> getBadAndGoodAffirmations() {
+
         List<Affirmation> affirmationList = affirmationDao.getAllAffirmations();
         return affirmationList;
     }
@@ -44,7 +59,7 @@ public class AffirmationService  {
      * @return
      */
     @GET
-    @Path("/affirmations/limit/{limit}")
+    @Path("/nsfw/affirmations/limit/{limit}")
     @Produces(MediaType.APPLICATION_JSON)
     public List<Affirmation> getAffirmationsWithLimit(@PathParam("limit") int limit) {
 
@@ -61,7 +76,24 @@ public class AffirmationService  {
      * @return
      */
     @GET
-        @Path("/affirmations/{affirmationId}")
+    @Path("/affirmations/limit/{limit}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Affirmation> getGoodAndBadAffirmationsWithLimit(@PathParam("limit") int limit) {
+
+        List<Affirmation> affirmationList = affirmationDao.getAllGoodAffirmations();
+
+        List<Affirmation> resultLimit = getLimitedList(affirmationList, limit);
+
+        return resultLimit;
+
+    }
+
+    /**
+     *
+     * @return
+     */
+    @GET
+    @Path("/affirmations/{affirmationId}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response getOneAffirmation(@PathParam("affirmationId") int affirmationId) {
 
@@ -146,21 +178,39 @@ public class AffirmationService  {
      * @return
      */
     @GET
+    @Path("/affirmations/popular/{categoryName}/{limit}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Affirmation> getAllPopularAffirmationsFromCategory(@PathParam("categoryName") String categoryName, @PathParam("limit") int limit) {
+
+        AffirmationDao affirmationDao = new AffirmationDao();
+        List<Affirmation> affirmationList = affirmationDao.getMostPopularAffirmations(categoryName, limit);
+        return affirmationList;
+    }
+
+
+    /**
+     *
+     * @return
+     */
+    @GET
     @Path("/affirmations/categories/{categoryName}/{limit}")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Affirmation> getAllAffirmationsFromCategory(@PathParam("categoryName") String categoryName, @PathParam("limit") int limit) {
+    public List<Affirmation> getMostPopularAffirmationByCategory(@PathParam("categoryName") String categoryName, @PathParam("limit") int limit) {
 
         AffirmationDao affirmationDao = new AffirmationDao();
 
         List<Affirmation> affirmationList = affirmationDao.getAllAffirmationsFromCategory(categoryName);
         List<Affirmation> resultLimit = new ArrayList<Affirmation>();
         return getLimitedList(affirmationList, limit);
+
+
     }
 
 
     public List<Affirmation> getLimitedList(List<Affirmation> affirmations, int limit) {
 
         List<Affirmation> resultLimit = new ArrayList<Affirmation>();
+        log.info("The affirmaiton limited list function with limit: " + limit);
 
         if (limit > 0) {
 
@@ -173,7 +223,10 @@ public class AffirmationService  {
         } else {
 
             resultLimit = affirmations;
+
         }
+
+        log.info("Result limit of affs: " + resultLimit);
 
         return resultLimit;
 
